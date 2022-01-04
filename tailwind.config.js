@@ -1,3 +1,4 @@
+/** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
@@ -6,7 +7,52 @@ module.exports = {
     "./src/data/**/*.json",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        ci: {
+          red: "#863932",
+          brown: "#936E5C",
+          "brown-light": "#C8B6AD",
+          gray: "#F9F8F7",
+        },
+      },
+      maxWidth: {
+        "screen-xl": 1368 - 2 * 60, // 1248
+      },
+    },
+    screens: {
+      sm: "576px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
+    spacing: {
+      0: "0px",
+      px: "1px",
+      2: "0.125rem",
+      4: "0.25rem",
+      6: "0.375rem",
+      8: "0.5rem",
+      10: "0.625rem",
+      12: "0.75rem",
+      15: "0.9375rem",
+      16: "1rem",
+      18: "1.125rem",
+      20: "1.25rem",
+      24: "1.5rem",
+      30: "1.875rem",
+      40: "2.5rem",
+      50: "3.125rem",
+      60: "3.75rem",
+      70: "4.375rem",
+      75: "4.6875rem",
+      80: "5rem",
+      90: "5.625rem",
+      100: "6.25rem",
+      120: "7.5rem",
+      180: "11.25rem",
+      240: "15rem",
+    },
   },
   plugins: [],
 };
