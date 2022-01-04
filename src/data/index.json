@@ -1,0 +1,23 @@
+{
+  "restaurant": {
+    "headline": "Gasthaus",
+    "intro__md": "Herzlich Willkommen in unserer Gaststätte mit Tradition. Unsere Mühle hat viel erlebt - so wie wir auch. Wir leben die Arbeit als Gastgeber mit Leidenschaft.",
+    "body__md": "Wir betrachten das Herstellen von gutem Essen als wichtiges Handwerk. Wir kommen aus der Winzerei und haben lange Jahre Erfahrung im Betreiben einer Straußenwirtschaft. Vielleicht kennen Sie sie – die Ziegelhofstraußi in Ballrechten-Dottingen. Wir haben unsere Produkte an über 50 Gaststätten weiter vermarktet. Wir wussten daher ein gutes Essen und einen guten Tropfen Wein schon immer zu schätzen und haben viel dafür getan, ein wertvoller Teil dieser Wertschöpfungskette zu sein. Als unser Sohn Markus 2016 ins Alter kam, unseren gutgehenden Betrieb zu übernehmen, haben wir Platz gemacht und uns einen neuen Ort gesucht, wo wir unsere Leidenschaft leben können. Gefunden haben wir ihn im Gasthaus Mühle in Buggingen.",
+    "outro__md": "Uns begeistert hier die Mischung aus Tradition und Moderne. Der richtige Ort, um unseren Gästen klassische badische Küche zeitgemäß zu servieren."
+  },
+  "host": {
+    "headline": "Ihre Gastgeber",
+    "intro__md": "Bewirtet werden Sie hier von mir, Peter Löffler und meiner Ehefrau Christine. Ich bin gelernter Winzer und Weinhandelsküfer. Zum Kochen kam ich als Quereinsteiger „aus der Not“, weil gute Köche nicht leicht zu finden sind. Seit ich mich 2001 erstmals in der Küche versucht habe, ging die Entwicklung stets weiter und ich habe schon lange eine neue Leidenschaft im Kochen gefunden. Eine weitere Leidenschaft ist meine Patchwork-Familie mit unseren insgesamt fünf Kindern, von denen die meisten auch ihre Berufung in der Arbeit für den Gast im Gaststätten- und Hotelgewerbe gefunden haben."
+  },
+  "food": {
+    "headline": "Essen",
+    "intro__md": "Wir kochen nach eigenen, oft alten Rezepturen, die wir über die Jahre weiterentwickelt und abgerundet haben. Unsere Bandbreite ist vielfältig und saisonal. Unsere Gerichte spiegeln die klassische badische Küche wider.",
+    "body__md": "Den Start machen im Frühjahr die Spargelgerichte, die im Sommer vom Pfifferling in allen möglichen Varianten abgelöst werden. Den Herbst und Winter prägen deftige Gerichte wie Schlachtplatte und Wild – verfeinert durch den allseits beliebten Feldsalat. Unsere Zutaten beziehen wir, soweit es geht von regionalen Stellen. Unser Fleisch kommt von Metzgereien aus Bollschweil und Schallstadt. Und Wild gibt es auch nur, wenn es das regionale Angebot hergibt.",
+    "menu__md": "Lassen Sie sich von unserer Speisekarte schon mal dazu verführen, Lust auf den nächsten Besuch bei uns zu bekommen."
+  },
+  "history": {
+    "headline": "Geschichte",
+    "intro__md": "Unsere Mühle wurde im Jahr 1778 erbaut. Bis in die 1920er Jahre dreht sich hier auch das Mühlrad - genau an der Stelle wo heute unsere Speisen von der Küche in den Gastraum gereicht werden.",
+    "body__md": "Die Steine in der Mulde, die als Durchreiche dient, zeugen mit ihrer schwarzen Färbung vom Öl, mit dem das Mühlrad am Laufen gehalten wurde. Der Gastraum wurde vor einigen Jahren modern renoviert – ohne den Charme des Alten zu verlieren. Im Innenbereich hat unser Gasthof ca. 70 Plätze, im Außenbereich finden 80 Personen Platz. Wir freuen uns, dass unser Haus und unser Essen das ganze Jahr regen Zuspruch finden und sich unsere Entscheidung, uns diesem Kleinod als Pächter anzunehmen, auf ganzer Linie als gute Entscheidung erwiesen hat. Für unsere Gäste sind wir gerne das ganze Jahr „auf Trab“. Wir freuen uns auf Sie."
+  }
+}
