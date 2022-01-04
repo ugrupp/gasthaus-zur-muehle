@@ -1,8 +1,20 @@
-import type { NextPage } from "next";
+import type { InferGetStaticPropsType, NextPage } from "next";
 import Head from "next/head";
 import React from "react";
+import RestaurantSection from "../components/restaurant";
+import data from "../data/index.json";
 
-const Home: NextPage = () => {
+export const getStaticProps = async () => {
+  return {
+    props: {
+      data,
+    },
+  };
+};
+
+const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  data,
+}) => {
   return (
     <>
       <Head>
@@ -10,6 +22,7 @@ const Home: NextPage = () => {
       </Head>
 
       <h1 className="text-3xl font-bold">Startseite</h1>
+      <RestaurantSection restaurantData={data.restaurant} />
     </>
   );
 };
