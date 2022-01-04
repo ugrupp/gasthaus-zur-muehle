@@ -1,0 +1,22 @@
+html,
+body {
+  hyphens: auto;
+  scroll-behavior: smooth;
+  @apply antialiased;
+}
+
+address {
+  @apply block not-italic;
+}
+
+small {
+  font-size: inherit;
+}
+
+strong {
+  font-weight: inherit;
+}
+
+.swiper-button-disabled {
+  cursor: not-allowed;
+}
