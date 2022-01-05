@@ -7,21 +7,23 @@ import Container from "./container";
 
 interface RestaurantSectionProps {
   restaurantData: typeof data.restaurant;
+  className?: string;
 }
 
 const RestaurantSection: React.FC<RestaurantSectionProps> = ({
   restaurantData,
+  className,
 }) => {
   const { id, headline, intro__html, body__html, contentImage, outro__html } =
     restaurantData;
 
   return (
-    <section id={id}>
+    <section id={id} className={className}>
       {/* Top images */}
       <Container>
         {/* Image 1 */}
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content relative">
-          {/* TODO */}
+          {/* TODO (image & responsive dimensions) */}
           <div className="aspect-[295/425] bg-ci-red text-white flex items-center justify-center">
             Bild 1
           </div>
@@ -69,7 +71,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
       </Container>
 
       {/* Intro */}
-      <Container className="mt-30 md:mt-50 mb-50 md:mb-100">
+      <Container className="mt-40 md:mt-60 mb-50 md:mb-100">
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
           <p className="text-3xl font-bold">{parse(intro__html)}</p>
         </div>
