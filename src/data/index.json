@@ -1,14 +1,12 @@
 {
   "restaurant": {
-    "images": [
-      {
-        "src": "/images/dummy.jpg",
-        "width": 2392,
-        "height": 1260,
-        "objectPosition": "72% 20%",
-        "alt": ""
-      }
-    ],
+    "id": "gasthaus",
+    "contentImage": {
+      "src": "/images/dummy.jpg",
+      "width": 2392,
+      "height": 1260,
+      "alt": ""
+    },
     "headline": "Gasthaus",
     "intro__html": "<strong>Herzlich Willkommen</strong> in unserer Gaststätte mit Tradition. Unsere Mühle hat viel erlebt - so wie wir auch. Wir leben die Arbeit als Gastgeber mit Leidenschaft.",
     "body__html": "Wir betrachten das Herstellen von gutem Essen als wichtiges Handwerk. Wir kommen aus der Winzerei und haben lange Jahre Erfahrung im Betreiben einer Straußenwirtschaft. Vielleicht kennen Sie sie – die Ziegelhofstraußi in Ballrechten-Dottingen. Wir haben unsere Produkte an über 50 Gaststätten weiter vermarktet. Wir wussten daher ein gutes Essen und einen guten Tropfen Wein schon immer zu schätzen und haben viel dafür getan, ein wertvoller Teil dieser Wertschöpfungskette zu sein. Als unser Sohn Markus 2016 ins Alter kam, unseren gutgehenden Betrieb zu übernehmen, haben wir Platz gemacht und uns einen neuen Ort gesucht, wo wir unsere Leidenschaft leben können. Gefunden haben wir ihn im Gasthaus Mühle in Buggingen.",

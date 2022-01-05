@@ -21,7 +21,6 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         <title>Gasthaus »zur Mühle« in Buggingen, Familie Löffler</title>
       </Head>
 
-      <h1 className="text-3xl font-bold">Startseite</h1>
       <RestaurantSection restaurantData={data.restaurant} />
     </>
   );

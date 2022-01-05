@@ -10,9 +10,7 @@ const Container: React.FC<ContainerProps> = ({
 }) => {
   return (
     <div className={`px-20 sm:px-30 lg:px-60 ${className}`}>
-      <div className={`max-w-screen-xl mx-auto ${classNameInner}`}>
-        {children}
-      </div>
+      <div className={`max-w-7xl mx-auto ${classNameInner}`}>{children}</div>
     </div>
   );
 };
