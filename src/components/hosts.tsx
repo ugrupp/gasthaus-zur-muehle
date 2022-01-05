@@ -1,6 +1,4 @@
-import classNames from "classnames";
 import parse from "html-react-parser";
-import Image from "next/image";
 import React from "react";
 import data from "../data/index.json";
 import Container from "./container";
@@ -20,7 +18,7 @@ const HostsSection: React.FC<HostsSectionProps> = ({
   return (
     <section id={id} className={className}>
       {/* Headline */}
-      <Container className="relative">
+      <Container>
         <SectionHeading heading={headline} />
       </Container>
 
