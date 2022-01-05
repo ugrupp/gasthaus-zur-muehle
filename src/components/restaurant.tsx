@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import data from "../data/index.json";
 import Container from "./container";
+import SectionHeading from "./section-heading";
 
 interface RestaurantSectionProps {
   restaurantData: typeof data.restaurant;
@@ -67,7 +68,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
 
       {/* Headline */}
       <Container className="mt-40 md:-mt-112 relative">
-        <h2 className="text-center">{headline}</h2>
+        <SectionHeading heading={headline} />
       </Container>
 
       {/* Intro */}

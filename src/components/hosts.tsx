@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import data from "../data/index.json";
 import Container from "./container";
+import SectionHeading from "./section-heading";
 
 interface HostsSectionProps {
   hostsData: typeof data.hosts;
@@ -20,7 +21,7 @@ const HostsSection: React.FC<HostsSectionProps> = ({
     <section id={id} className={className}>
       {/* Headline */}
       <Container className="relative">
-        <h2 className="text-center">{headline}</h2>
+        <SectionHeading heading={headline} />
       </Container>
 
       {/* Intro */}
