@@ -23,7 +23,15 @@
     "headline": "Essen",
     "intro__html": "Wir kochen nach eigenen, oft alten Rezepturen, die wir über die Jahre weiterentwickelt und abgerundet haben. Unsere Bandbreite ist vielfältig und saisonal. Unsere Gerichte spiegeln die klassische badische Küche wider.",
     "body__html": "Den Start machen im Frühjahr die Spargelgerichte, die im Sommer vom Pfifferling in allen möglichen Varianten abgelöst werden. Den Herbst und Winter prägen deftige Gerichte wie Schlachtplatte und Wild – verfeinert durch den allseits beliebten Feldsalat. Unsere Zutaten beziehen wir, soweit es geht von regionalen Stellen. Unser Fleisch kommt von Metzgereien aus Bollschweil und Schallstadt. Und Wild gibt es auch nur, wenn es das regionale Angebot hergibt.",
-    "menu__html": "Lassen Sie sich von unserer Speisekarte schon mal dazu verführen, Lust auf den nächsten Besuch bei uns zu bekommen."
+    "menu__html": "Lassen Sie sich von unserer Speisekarte schon mal dazu verführen, Lust auf den nächsten Besuch bei uns zu bekommen.",
+    "menuFood": {
+      "label": "Speisekarte",
+      "href": "#"
+    },
+    "menuDrinks": {
+      "label": "Getränkekarte",
+      "href": "#"
+    }
   },
   "history": {
     "headline": "Geschichte",

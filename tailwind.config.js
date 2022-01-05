@@ -17,6 +17,7 @@ module.exports = {
         },
       },
       maxWidth: {
+        lg: 480,
         "2xl": 680,
         "7xl": 1368 - 2 * 60, // 1248
       },

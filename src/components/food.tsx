@@ -3,7 +3,9 @@ import parse from "html-react-parser";
 import React from "react";
 import data from "../data/index.json";
 import Container from "./container";
+import Dot from "./dot";
 import SectionHeading from "./section-heading";
+import ArrowsRight from "../assets/icons/arrows-right.svg";
 
 interface FoodSectionProps {
   foodData: typeof data.food;
@@ -11,7 +13,15 @@ interface FoodSectionProps {
 }
 
 const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
-  const { id, headline, intro__html, body__html } = foodData;
+  const {
+    id,
+    headline,
+    intro__html,
+    body__html,
+    menu__html,
+    menuFood,
+    menuDrinks,
+  } = foodData;
 
   return (
     <section id={id} className={classNames(className, "pt-80 md:pt-120")}>
@@ -74,8 +84,65 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
           </div>
         </div>
       </Container>
+
+      {/* Menu */}
+      <Container className="mt-70 md:mt-100 xl:mt-112">
+        <div className="px-20 md:px-100 max-w-lg mx-auto box-content space-y-40 md:space-y-50">
+          {/* Menu intro */}
+          <p className="text-2xl">{parse(menu__html)}</p>
+
+          {/* Menu links */}
+          <div className="space-y-10">
+            <FoodMenuLink menu={menuFood} />
+            <FoodMenuLink menu={menuDrinks} />
+          </div>
+        </div>
+      </Container>
     </section>
   );
 };
 
 export default FoodSection;
+
+// Menu link
+interface FoodMenuLinkProps {
+  menu: {
+    label: string;
+    href: string;
+  };
+}
+
+const FoodMenuLink: React.FC<FoodMenuLinkProps> = ({ menu }) => {
+  const { label, href } = menu;
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className={classNames([
+        "flex items-center gap-x-20 justify-between",
+        "border-current border-b py-10 md:py-12",
+        "text-ci-red",
+      ])}
+    >
+      {/* Label */}
+      <span>{label}</span>
+
+      {/* Decor */}
+      <div className="flex items-center gap-15">
+        {/* Dots */}
+        <div className="flex gap-10">
+          <Dot />
+          <Dot />
+          <Dot />
+          <Dot />
+          <Dot />
+          <Dot />
+        </div>
+
+        {/* Icon */}
+        <ArrowsRight className="block h-40 w-40" />
+      </div>
+    </a>
+  );
+};
