@@ -5,6 +5,14 @@ body {
   @apply antialiased bg-white text-brown-ci;
 }
 
+::selection {
+  @apply bg-red-ci text-white;
+}
+
+.selection-inverted ::selection {
+  @apply bg-white text-red-ci;
+}
+
 address {
   @apply block not-italic;
 }

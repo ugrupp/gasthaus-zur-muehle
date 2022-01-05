@@ -1,11 +1,11 @@
 import classNames from "classnames";
 import parse from "html-react-parser";
 import React from "react";
+import ArrowsRight from "../assets/icons/arrows-right.svg";
 import data from "../data/index.json";
 import Container from "./container";
 import Dot from "./dot";
 import SectionHeading from "./section-heading";
-import ArrowsRight from "../assets/icons/arrows-right.svg";
 
 interface FoodSectionProps {
   foodData: typeof data.food;
@@ -98,6 +98,11 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
           </div>
         </div>
       </Container>
+
+      {/* Carousel */}
+      <div className="mt-80 md:mt-120">
+        <div className="bg-brown-ci-light h-280">Carousel</div>
+      </div>
     </section>
   );
 };
