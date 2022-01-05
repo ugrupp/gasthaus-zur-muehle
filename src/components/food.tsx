@@ -33,7 +33,7 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
       {/* Intro */}
       <Container className="mt-40 md:mt-60 relative">
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
-          <p className="text-3xl font-bold">{parse(intro__html)}</p>
+          <p className="text-3xl font-bold text-red-ci">{parse(intro__html)}</p>
         </div>
       </Container>
 
@@ -52,7 +52,7 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
           >
             <div className="w-3/4 md:w-auto">
               {/* TODO */}
-              <div className="aspect-[255/212] bg-ci-brown-light flex items-center justify-center">
+              <div className="aspect-[255/212] bg-brown-ci-light flex items-center justify-center">
                 Bild 1
               </div>
             </div>
@@ -66,7 +66,7 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
           >
             <div className="w-3/4 ml-auto md:w-auto md:ml-0">
               {/* TODO */}
-              <div className="aspect-[255/212] bg-ci-red text-white flex items-center justify-center">
+              <div className="aspect-[255/212] bg-red-ci text-white flex items-center justify-center">
                 Bild 2
               </div>
             </div>
@@ -122,7 +122,7 @@ const FoodMenuLink: React.FC<FoodMenuLinkProps> = ({ menu }) => {
       className={classNames([
         "flex items-center gap-x-20 justify-between",
         "border-current border-b py-10 md:py-12",
-        "text-ci-red",
+        "text-red-ci",
       ])}
     >
       {/* Label */}

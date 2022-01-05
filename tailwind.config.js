@@ -9,11 +9,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ci: {
-          red: "#863932",
-          brown: "#936E5C",
-          "brown-light": "#C8B6AD",
-          gray: "#F9F8F7",
+        red: {
+          ci: "#863932",
+        },
+        brown: {
+          ci: "#936E5C",
+          "ci-light": "#C8B6AD",
+        },
+        gray: {
+          ci: "#F9F8F7",
         },
       },
       maxWidth: {

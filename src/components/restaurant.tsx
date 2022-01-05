@@ -25,7 +25,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
         {/* Image 1 */}
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content relative">
           {/* TODO (image & responsive dimensions) */}
-          <div className="aspect-[295/425] bg-ci-red text-white flex items-center justify-center">
+          <div className="aspect-[295/425] bg-red-ci text-white flex items-center justify-center">
             Bild 1
           </div>
         </div>
@@ -47,7 +47,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
           >
             <div className="w-3/4 md:w-auto">
               {/* TODO */}
-              <div className="aspect-[255/212] bg-ci-brown text-white flex items-center justify-center">
+              <div className="aspect-[255/212] bg-brown-ci text-white flex items-center justify-center">
                 Bild 2
               </div>
             </div>
@@ -58,7 +58,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
           >
             <div className="w-3/4 ml-auto md:w-auto md:ml-0">
               {/* TODO */}
-              <div className="aspect-[255/212] bg-ci-brown-light flex items-center justify-center">
+              <div className="aspect-[255/212] bg-brown-ci-light flex items-center justify-center">
                 Bild 3
               </div>
             </div>
@@ -74,7 +74,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
       {/* Intro */}
       <Container className="mt-40 md:mt-60 mb-50 md:mb-100">
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
-          <p className="text-3xl font-bold">{parse(intro__html)}</p>
+          <p className="text-3xl font-bold text-red-ci">{parse(intro__html)}</p>
         </div>
       </Container>
 
@@ -130,7 +130,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
       {/* Gallery */}
       <Container>
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
-          <div className="aspect-square bg-ci-brown-light flex items-center justify-center">
+          <div className="aspect-square bg-brown-ci-light flex items-center justify-center">
             Galerie
           </div>
         </div>

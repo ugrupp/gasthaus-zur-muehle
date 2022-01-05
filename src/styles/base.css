@@ -2,7 +2,7 @@ html,
 body {
   hyphens: auto;
   scroll-behavior: smooth;
-  @apply antialiased bg-white text-ci-brown;
+  @apply antialiased bg-white text-brown-ci;
 }
 
 address {

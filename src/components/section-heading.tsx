@@ -23,7 +23,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
     <h2
       className={classNames(
         className,
-        "text-center text-ci-red",
+        "text-center text-red-ci",
         "flex justify-center items-center gap-x-20 md:gap-x-30"
       )}
     >
