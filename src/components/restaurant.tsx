@@ -53,7 +53,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
             ref={topSentinelRef}
           >
             <div
-              className="aspect-square w-full max-h-[570px] bg-red-ci text-white flex items-center justify-center"
+              className="w-full h-[570px] max-h-[570px] bg-red-ci text-white flex items-center justify-center"
               style={{
                 height: !!heroImageHeight ? `${heroImageHeight}px` : undefined,
               }}
