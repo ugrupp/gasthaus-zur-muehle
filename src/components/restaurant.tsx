@@ -1,11 +1,11 @@
 import classNames from "classnames";
 import parse from "html-react-parser";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import data from "../data/index.json";
+import richtextStyles from "../styles/richtext.module.css";
 import Container from "./container";
 import SectionHeading from "./section-heading";
-import richtextStyles from "../styles/richtext.module.css";
 
 interface RestaurantSectionProps {
   restaurantData: typeof data.restaurant;
@@ -19,15 +19,42 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
   const { id, headline, intro__html, body__html, contentImage, outro__html } =
     restaurantData;
 
+  const topSentinelRef = useRef<HTMLDivElement>(null);
+  const [heroImageHeight, setHeroImageHeight] = useState(0);
+
+  const updateHeroImageHeight = () => {
+    !!topSentinelRef.current &&
+      setHeroImageHeight(
+        window.innerHeight -
+          topSentinelRef.current.getBoundingClientRect().top +
+          window.pageYOffset
+      );
+  };
+
+  useEffect(() => {
+    updateHeroImageHeight();
+
+    window.addEventListener("resize", () => {
+      window.requestAnimationFrame(() => {
+        updateHeroImageHeight();
+      });
+    });
+  }, []);
+
   return (
     <section id={id} className={className}>
       {/* Top images */}
       <Container>
-        {/* Image 1 */}
-        <div className="px-20 md:px-100 max-w-2xl mx-auto box-content relative">
-          {/* TODO: first image = screen height */}
-          <div className="aspect-[295/425] bg-red-ci text-white flex items-center justify-center">
-            Bild 1
+        {/* Hero image */}
+        <div
+          className="px-20 md:px-100 max-w-2xl mx-auto box-content relative"
+          ref={topSentinelRef}
+        >
+          <div
+            className="bg-red-ci text-white flex items-center justify-center"
+            style={{ height: `${heroImageHeight}px` }}
+          >
+            Hero-Bild
           </div>
         </div>
 
