@@ -1,6 +1,8 @@
+import classNames from "classnames";
 import parse from "html-react-parser";
 import React from "react";
 import data from "../data/index.json";
+import richtextStyles from "../styles/richtext.module.css";
 import Container from "./container";
 import SectionHeading from "./section-heading";
 
@@ -25,7 +27,14 @@ const HostsSection: React.FC<HostsSectionProps> = ({
       {/* Intro */}
       <Container className="mt-40 md:mt-60">
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
-          <p className="text-2xl">{parse(intro__html)}</p>
+          <div
+            className={classNames([
+              richtextStyles.root,
+              richtextStyles["size-base"],
+            ])}
+          >
+            {parse(intro__html)}
+          </div>
         </div>
       </Container>
 

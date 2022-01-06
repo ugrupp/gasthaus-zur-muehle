@@ -5,6 +5,7 @@ import React from "react";
 import data from "../data/index.json";
 import Container from "./container";
 import SectionHeading from "./section-heading";
+import richtextStyles from "../styles/richtext.module.css";
 
 interface RestaurantSectionProps {
   restaurantData: typeof data.restaurant;
@@ -24,7 +25,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
       <Container>
         {/* Image 1 */}
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content relative">
-          {/* TODO (image & responsive dimensions) */}
+          {/* TODO: first image = screen height */}
           <div className="aspect-[295/425] bg-red-ci text-white flex items-center justify-center">
             Bild 1
           </div>
@@ -74,7 +75,16 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
       {/* Intro */}
       <Container className="mt-40 md:mt-60 mb-50 md:mb-100">
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
-          <p className="text-3xl font-bold text-red-ci">{parse(intro__html)}</p>
+          <div
+            className={classNames([
+              richtextStyles.root,
+              richtextStyles["size-4xl"],
+              "leading-supertight font-fracture",
+              "text-red-ci",
+            ])}
+          >
+            {parse(intro__html)}
+          </div>
         </div>
       </Container>
 
@@ -95,7 +105,15 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
               "px-20 md:px-100 max-w-2xl mx-auto box-content lg:p-0 lg:max-w-none lg:m-0",
             ])}
           >
-            <p>{parse(body__html)}</p>
+            <div
+              className={classNames([
+                richtextStyles.root,
+                richtextStyles["size-base"],
+                "leading-tight",
+              ])}
+            >
+              {parse(body__html)}
+            </div>
           </div>
 
           {/* Image */}
@@ -123,7 +141,15 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
       {/* Outro */}
       <Container className="my-70 md:my-120">
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
-          <p className="text-2xl">{parse(outro__html)}</p>
+          <div
+            className={classNames([
+              richtextStyles.root,
+              richtextStyles["size-lg"],
+              "leading-tight",
+            ])}
+          >
+            {parse(outro__html)}
+          </div>
         </div>
       </Container>
 

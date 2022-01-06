@@ -23,6 +23,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
     <h2
       className={classNames(
         className,
+        "font-fracture leading-supertight text-16 md:text-18",
         "text-center text-red-ci",
         "flex justify-center items-center gap-x-20 md:gap-x-30"
       )}

@@ -3,6 +3,7 @@ import parse from "html-react-parser";
 import React from "react";
 import ArrowsRight from "../assets/icons/arrows-right.svg";
 import data from "../data/index.json";
+import richtextStyles from "../styles/richtext.module.css";
 import Container from "./container";
 import Dot from "./dot";
 import SectionHeading from "./section-heading";
@@ -33,7 +34,16 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
       {/* Intro */}
       <Container className="mt-40 md:mt-60 relative">
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
-          <p className="text-3xl font-bold text-red-ci">{parse(intro__html)}</p>
+          <div
+            className={classNames([
+              richtextStyles.root,
+              richtextStyles["size-4xl"],
+              "leading-supertight font-fracture",
+              "text-red-ci",
+            ])}
+          >
+            {parse(intro__html)}
+          </div>
         </div>
       </Container>
 
@@ -80,7 +90,15 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
               "px-20 md:px-100 max-w-2xl mx-auto box-content lg:p-0 lg:max-w-none lg:mx-0",
             ])}
           >
-            <p>{parse(body__html)}</p>
+            <div
+              className={classNames([
+                richtextStyles.root,
+                richtextStyles["size-base"],
+                "leading-tight",
+              ])}
+            >
+              {parse(body__html)}
+            </div>
           </div>
         </div>
       </Container>
@@ -89,7 +107,15 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
       <Container className="mt-70 md:mt-100 xl:mt-112">
         <div className="px-20 md:px-100 max-w-lg mx-auto box-content space-y-40 md:space-y-50">
           {/* Menu intro */}
-          <p className="text-2xl">{parse(menu__html)}</p>
+          <div
+            className={classNames([
+              richtextStyles.root,
+              richtextStyles["size-lg"],
+              "leading-tight",
+            ])}
+          >
+            {parse(menu__html)}
+          </div>
 
           {/* Menu links */}
           <div className="space-y-10">
@@ -127,7 +153,7 @@ const FoodMenuLink: React.FC<FoodMenuLinkProps> = ({ menu }) => {
       className={classNames([
         "flex items-center gap-x-20 justify-between",
         "border-current border-b py-10 md:py-12",
-        "text-red-ci",
+        "text-red-ci font-fracture leading-supertight text-25 md:text-30",
       ])}
     >
       {/* Label */}

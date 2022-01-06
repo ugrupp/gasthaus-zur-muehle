@@ -1,0 +1,47 @@
+.root {
+  /* Elements */
+  & strong {
+    @apply italic;
+  }
+
+  & ul {
+    list-style: disc inside;
+  }
+
+  /* Spacing */
+  /* TODO */
+  & :is(p, address, ul, table, h2, h3, h4) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  & li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  /* General */
+  & > :first-child {
+    margin-top: 0;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+
+  & a {
+    overflow-wrap: anywhere;
+  }
+}
+
+.size-base {
+  @apply text-base md:text-20 xl:text-21;
+}
+
+.size-lg {
+  @apply text-21 md:text-26 xl:text-27;
+}
+
+.size-4xl {
+  @apply text-35 md:text-45 xl:text-46;
+}

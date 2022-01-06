@@ -20,6 +20,26 @@ module.exports = {
           ci: "#F9F8F7",
         },
       },
+      fontSize: {
+        14: "14px",
+        16: "16px",
+        18: "18px",
+        20: "20px",
+        21: "21px",
+        25: "25px",
+        26: "26px",
+        27: "27px",
+        30: "30px",
+        35: "35px",
+        45: "45px",
+        46: "46px",
+      },
+      fontFamily: {
+        fracture: "Brush Script MT",
+      },
+      lineHeight: {
+        supertight: 1.08,
+      },
       maxWidth: {
         lg: 480,
         "2xl": 680,

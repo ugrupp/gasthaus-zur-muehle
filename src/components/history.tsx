@@ -1,6 +1,8 @@
+import classNames from "classnames";
 import parse from "html-react-parser";
 import React from "react";
 import data from "../data/index.json";
+import richtextStyles from "../styles/richtext.module.css";
 import Container from "./container";
 import SectionHeading from "./section-heading";
 
@@ -25,7 +27,16 @@ const HistorySection: React.FC<HistorySectionProps> = ({
       {/* Intro */}
       <Container className="mt-40 md:mt-60">
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
-          <p className="text-3xl font-bold text-red-ci">{parse(intro__html)}</p>
+          <div
+            className={classNames([
+              richtextStyles.root,
+              richtextStyles["size-4xl"],
+              "leading-supertight font-fracture",
+              "text-red-ci",
+            ])}
+          >
+            {parse(intro__html)}
+          </div>
         </div>
       </Container>
 
@@ -51,7 +62,15 @@ const HistorySection: React.FC<HistorySectionProps> = ({
       {/* Body */}
       <Container className="mt-50 md:mt-60">
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
-          <p className="text-2xl">{parse(body__html)}</p>
+          <div
+            className={classNames([
+              richtextStyles.root,
+              richtextStyles["size-lg"],
+              "leading-tight",
+            ])}
+          >
+            {parse(body__html)}
+          </div>
         </div>
       </Container>
     </section>
