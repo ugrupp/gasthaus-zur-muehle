@@ -24,11 +24,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
 
   const updateHeroImageHeight = () => {
     !!topSentinelRef.current &&
-      setHeroImageHeight(
-        window.innerHeight -
-          topSentinelRef.current.getBoundingClientRect().top +
-          window.pageYOffset
-      );
+      setHeroImageHeight(window.innerHeight - topSentinelRef.current.offsetTop);
   };
 
   useEffect(() => {
@@ -51,8 +47,10 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
           ref={topSentinelRef}
         >
           <div
-            className="bg-red-ci text-white flex items-center justify-center"
-            style={{ height: `${heroImageHeight}px` }}
+            className="aspect-square w-full max-h-[570px] bg-red-ci text-white flex items-center justify-center"
+            style={{
+              height: !!heroImageHeight ? `${heroImageHeight}px` : undefined,
+            }}
           >
             Hero-Bild
           </div>
