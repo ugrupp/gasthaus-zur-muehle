@@ -2,9 +2,11 @@ import classNames from "classnames";
 import parse from "html-react-parser";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
+import ArrowsRight from "../assets/icons/arrows-right.svg";
 import data from "../data/index.json";
 import richtextStyles from "../styles/richtext.module.css";
 import Container from "./container";
+import Dot from "./dot";
 import SectionHeading from "./section-heading";
 
 interface RestaurantSectionProps {
@@ -24,7 +26,10 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
 
   const updateHeroImageHeight = () => {
     !!topSentinelRef.current &&
-      setHeroImageHeight(window.innerHeight - topSentinelRef.current.offsetTop);
+      setHeroImageHeight(
+        window.innerHeight -
+          (topSentinelRef.current.getBoundingClientRect().top + window.scrollY)
+      );
   };
 
   useEffect(() => {
@@ -41,18 +46,44 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
     <section id={id} className={className}>
       {/* Top images */}
       <Container>
-        {/* Hero image */}
-        <div
-          className="px-20 md:px-100 max-w-2xl mx-auto box-content relative"
-          ref={topSentinelRef}
-        >
+        <div className="relative">
+          {/* Hero image */}
           <div
-            className="aspect-square w-full max-h-[570px] bg-red-ci text-white flex items-center justify-center"
-            style={{
-              height: !!heroImageHeight ? `${heroImageHeight}px` : undefined,
-            }}
+            className="px-20 md:px-100 max-w-2xl mx-auto box-content relative"
+            ref={topSentinelRef}
           >
-            Hero-Bild
+            <div
+              className="aspect-square w-full max-h-[570px] bg-red-ci text-white flex items-center justify-center"
+              style={{
+                height: !!heroImageHeight ? `${heroImageHeight}px` : undefined,
+              }}
+            >
+              Hero-Bild
+            </div>
+          </div>
+
+          {/* Scroll indicator */}
+          <div className="absolute right-0 bottom-30 hidden md:block">
+            <a href="#content" className="block text-red-ci">
+              {/* Label */}
+              <span className="sr-only">Nach unten scrollen</span>
+
+              {/* Decor */}
+              <div className="flex flex-col items-center gap-15">
+                {/* Dots */}
+                <div className="flex flex-col gap-10">
+                  <Dot />
+                  <Dot />
+                  <Dot />
+                  <Dot />
+                  <Dot />
+                  <Dot />
+                </div>
+
+                {/* Icon */}
+                <ArrowsRight className="block h-40 w-40 rotate-90" />
+              </div>
+            </a>
           </div>
         </div>
 
@@ -93,7 +124,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
       </Container>
 
       {/* Headline */}
-      <Container className="mt-40 md:-mt-112 relative">
+      <Container className="mt-40 md:-mt-112 relative" id="content">
         <SectionHeading heading={headline} />
       </Container>
 
