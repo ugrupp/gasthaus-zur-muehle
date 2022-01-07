@@ -11,6 +11,7 @@ import styles from "../styles/footer.module.css";
 import richtextStyles from "../styles/richtext.module.css";
 import Container from "./container";
 import Dot from "./dot";
+import Map from "./map";
 
 interface FooterProps {}
 
@@ -74,7 +75,7 @@ const Footer: React.FC<FooterProps> = () => {
               {/* Address */}
               <div
                 className={classNames(
-                  "mt-50 text-center relative",
+                  "mt-50 text-center relative z-10",
                   richtextStyles.root,
                   richtextStyles["size-lg"],
                   "leading-tight"
@@ -84,12 +85,12 @@ const Footer: React.FC<FooterProps> = () => {
               </div>
 
               {/* Map */}
-              <div className="w-full aspect-square bg-black text-white -my-30 md:-mt-40">
-                Map
+              <div className="w-full h-[355px] md:h-[422px] xl:h-[570px] bg-zinc-800 text-white -mt-30 md:-mt-40 mb-30 md:mb-40">
+                <Map />
               </div>
 
               {/* Contact */}
-              <div className="relative space-y-12 md:space-y-30">
+              <div className="relative z-10 space-y-12 md:space-y-30">
                 {[
                   {
                     key: "phone",
