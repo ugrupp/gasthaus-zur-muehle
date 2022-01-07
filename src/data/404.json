@@ -1,0 +1,11 @@
+{
+  "id": "404",
+  "bgImage": {
+    "src": "/images/dummy.jpg",
+    "width": 2392,
+    "height": 1260,
+    "alt": "",
+    "objectPosition": "50% 50%"
+  },
+  "text__html": "<p><strong class=\"font-fracture text-gray-ci\">404:</strong> Die Seite konnte nicht gefunden werden.</p>"
+}
