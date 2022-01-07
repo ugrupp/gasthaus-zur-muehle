@@ -33,12 +33,12 @@ const Contact: React.FC<ContactProps> = ({ phoneLink, opentimes__html }) => {
           content: parse(opentimes__html),
         },
       ].map(({ key, Icon, content }) => (
-        <div className="flex gap-10 md:gap-12" key={key}>
-          <Icon className="md:h-30 md:w-30 lg:h-[33px] lg:w-[33px] translate-y-[-17%]" />
+        <div className="flex gap-12 md:gap-10 lg:gap-12" key={key}>
+          <Icon className="text-red-ci h-[33px] w-[33px] md:h-30 md:w-30 lg:h-[33px] lg:w-[33px] translate-y-[-17%] shrink-0" />
           <div
             className={classNames(
               richtextStyles.root,
-              "text-17 md:text-15 xl:text-17 leading-tight whitespace-nowrap"
+              "text-17 md:text-15 lg:text-17 leading-tight whitespace-nowrap"
             )}
           >
             {content}

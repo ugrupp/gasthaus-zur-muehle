@@ -44,7 +44,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
   }, []);
 
   return (
-    <section id={id} className={className}>
+    <section className={className}>
       {/* Top images */}
       <Container>
         <div className="relative">
@@ -65,7 +65,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
 
           {/* Scroll indicator */}
           <div className="absolute right-0 bottom-30 hidden md:block">
-            <a href="#content" className="block text-red-ci">
+            <a href="#gasthaus" className="block text-red-ci">
               {/* Label */}
               <span className="sr-only">Nach unten scrollen</span>
 
@@ -125,7 +125,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
       </Container>
 
       {/* Headline */}
-      <Container className="mt-40 md:-mt-112 relative" id="content">
+      <Container className="mt-40 md:-mt-112 relative" id={id}>
         <SectionHeading heading={headline} />
       </Container>
 

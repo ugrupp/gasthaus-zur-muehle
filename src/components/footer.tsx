@@ -46,7 +46,10 @@ const Footer: React.FC<FooterProps> = () => {
         </div>
       </Container>
 
-      <div className="mt-[-225px] md:mt-[-450px] min-h-[225px] md:min-h-[450px] text-gray-ci selection-inverted relative">
+      <div
+        className="mt-[-225px] md:mt-[-450px] min-h-[225px] md:min-h-[450px] text-gray-ci selection-inverted relative"
+        id="anfahrt"
+      >
         {/* Background */}
         <div className="bg-red-ci mix-blend-multiply absolute inset-0"></div>
 
@@ -85,7 +88,7 @@ const Footer: React.FC<FooterProps> = () => {
               </div>
 
               {/* Map */}
-              <div className="w-full h-[355px] md:h-[422px] xl:h-[570px] bg-zinc-800 text-white -mt-30 md:-mt-40 mb-30 md:mb-40">
+              <div className="w-full h-[355px] md:h-[422px] lg:h-[570px] bg-zinc-800 text-white -mt-30 md:-mt-40 mb-30 md:mb-40">
                 <Map />
               </div>
 
