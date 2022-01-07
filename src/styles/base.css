@@ -6,11 +6,11 @@ body {
 }
 
 ::selection {
-  @apply bg-red-ci text-white;
+  @apply bg-red-ci text-gray-ci;
 }
 
 .selection-inverted ::selection {
-  @apply bg-white text-red-ci;
+  @apply bg-gray-ci text-red-ci;
 }
 
 address {

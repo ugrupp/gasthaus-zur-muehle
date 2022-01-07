@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import ArrowsRight from "../assets/icons/arrows-right.svg";
 import data from "../data/index.json";
+import { NEXT_IMAGE_DEFAULT_QUALITY } from "../lib/constants";
 import richtextStyles from "../styles/richtext.module.css";
 import Container from "./container";
 import Dot from "./dot";
@@ -181,8 +182,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
           >
             <div className="w-3/4 md:w-auto">
               <Image
-                // TODO: global quality config?
-                quality={85}
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
                 layout="responsive"
                 src={contentImage.src}
                 alt={contentImage.alt}

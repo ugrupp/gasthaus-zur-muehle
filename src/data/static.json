@@ -29,25 +29,30 @@
   },
 
   "footer": {
+    "bgImage": {
+      "src": "/images/dummy.jpg",
+      "width": 2392,
+      "height": 1260,
+      "alt": "",
+      "objectPosition": "50% 50%"
+    },
     "address__html": "Untere Mühlenstraße 18 <br />79426 Buggingen",
     "phoneLink": {
       "href": "tel:+4976317407737",
       "label": "07631 740 77 37"
     },
-    "opentimes__html": [
-      "Dienstag bis Samstag <br />17:00 — 22:00 Uhr",
-      "Sonntag <br />12:00 — 22:00 Uhr"
-    ],
+    "opentimes__html": "<p>Dienstag bis Samstag <br />17:00 — 22:00 Uhr</p><p>Sonntag <br />12:00 — 22:00 Uhr</p>",
+
     "menu": [
       {
         "href": "/impressum",
         "label": "Impressum"
       },
       {
-        "href": "/#datenschutz",
+        "href": "/datenschutz",
         "label": "Datenschutz"
       }
     ],
-    "imprint__html": "Eine Website von <a href=\"https://www.formatformat.de\">formatformat.de</a>"
+    "imprint__html": "Eine Website von <br /><a class=\"font-serif\" href=\"https://www.formatformat.de\">formatformat.de</a>"
   }
 }

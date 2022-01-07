@@ -33,7 +33,7 @@ const Topbar: React.FC<TopbarProps> = () => {
             </a>
           </Link>
 
-          {/* Info */}
+          {/* Contact */}
           <div className="hidden md:block justify-self-end">
             {data.topbar.opentimes__html.map((opentime, index) => (
               <p key={index}>{parse(opentime)}</p>

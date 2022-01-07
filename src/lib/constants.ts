@@ -1,0 +1,1 @@
+export const NEXT_IMAGE_DEFAULT_QUALITY = 85;

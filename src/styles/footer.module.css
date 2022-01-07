@@ -1,0 +1,15 @@
+.bg-image {
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.info {
+  @apply font-fracture text-14 md:text-19 leading-normal;
+
+  & a {
+    @apply font-serif text-13 md:text-18 transition-colors hover:text-gray-ci;
+  }
+}
