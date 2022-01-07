@@ -35,6 +35,7 @@ const NotFoundBanner: React.FC<NotFoundBannerProps> = ({
           alt={bgImage.alt}
           objectFit="cover"
           objectPosition={bgImage.objectPosition}
+          priority={true}
         />
       </div>
 

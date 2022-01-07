@@ -78,6 +78,7 @@ const Topbar: React.FC<TopbarProps> = () => {
                 width={305.232}
                 height={170.052}
                 layout="responsive"
+                priority={true}
               />
             </a>
           </Link>
