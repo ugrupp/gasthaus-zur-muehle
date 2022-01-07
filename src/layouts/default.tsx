@@ -8,7 +8,7 @@ interface LayoutProps {
   id?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ id, children }) => {
+const Layout: React.FC<LayoutProps> = ({ id = "", children }) => {
   const renderFooter = id !== "404";
 
   return (
