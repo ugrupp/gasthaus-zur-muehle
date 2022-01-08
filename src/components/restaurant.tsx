@@ -82,7 +82,10 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
 
           {/* Scroll indicator */}
           <div className="absolute right-0 bottom-30 hidden md:block">
-            <a href="#gasthaus" className="block text-red-ci">
+            <a
+              href="#gasthaus"
+              className="block text-red-ci transition-colors hover:text-brown-ci"
+            >
               {/* Label */}
               <span className="sr-only">Nach unten scrollen</span>
 

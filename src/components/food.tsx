@@ -170,6 +170,7 @@ const FoodMenuLink: React.FC<FoodMenuLinkProps> = ({ menu }) => {
         "flex items-center gap-x-20 justify-between",
         "border-current border-b py-10 md:py-12",
         "text-red-ci font-fracture leading-supertight text-25 md:text-30",
+        "transition-colors hover:text-brown-ci",
       ])}
     >
       {/* Label */}
