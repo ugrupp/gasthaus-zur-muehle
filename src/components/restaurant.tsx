@@ -19,8 +19,17 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
   restaurantData,
   className,
 }) => {
-  const { id, headline, intro__html, body__html, contentImage, outro__html } =
-    restaurantData;
+  const {
+    id,
+    heroImage,
+    image2,
+    image3,
+    headline,
+    intro__html,
+    body__html,
+    contentImage,
+    outro__html,
+  } = restaurantData;
 
   const topSentinelRef = useRef<HTMLDivElement>(null);
   const [heroImageHeight, setHeroImageHeight] = useState(0);
@@ -47,19 +56,27 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
     <section className={className}>
       {/* Top images */}
       <Container>
-        <div className="relative">
+        <div className="relative z-10">
           {/* Hero image */}
           <div
-            className="px-20 md:px-100 max-w-2xl mx-auto box-content relative"
+            className="px-20 md:px-100 max-w-2xl mx-auto box-content"
             ref={topSentinelRef}
           >
             <div
-              className="w-full h-[570px] max-h-[570px] bg-red-ci text-white flex items-center justify-center"
+              className="w-full h-[570px] max-h-[570px] relative"
               style={{
                 height: !!heroImageHeight ? `${heroImageHeight}px` : undefined,
               }}
             >
-              Hero-Bild
+              <Image
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
+                layout="fill"
+                src={heroImage.src}
+                alt={heroImage.alt}
+                objectFit="cover"
+                objectPosition={heroImage.objectPosition}
+                priority={true}
+              />
             </div>
           </div>
 
@@ -104,10 +121,17 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
             ])}
           >
             <div className="w-3/4 md:w-auto">
-              {/* TODO */}
-              <div className="aspect-[255/212] bg-brown-ci text-white flex items-center justify-center">
-                Bild 2
-              </div>
+              <Image
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
+                layout="responsive"
+                src={image2.src}
+                alt={image2.alt}
+                width={image2.width}
+                height={image2.height}
+                objectFit="cover"
+                objectPosition={image2.objectPosition}
+                priority={true}
+              />
             </div>
           </div>
 
@@ -115,10 +139,17 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
             className={classNames(["col-span-2 md:col-start-2 md:col-end-3"])}
           >
             <div className="w-3/4 ml-auto md:w-auto md:ml-0">
-              {/* TODO */}
-              <div className="aspect-[255/212] bg-brown-ci-light flex items-center justify-center">
-                Bild 3
-              </div>
+              <Image
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
+                layout="responsive"
+                src={image3.src}
+                alt={image3.alt}
+                width={image3.width}
+                height={image3.height}
+                objectFit="cover"
+                objectPosition={image3.objectPosition}
+                priority={true}
+              />
             </div>
           </div>
         </div>
@@ -130,7 +161,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
       </Container>
 
       {/* Intro */}
-      <Container className="mt-40 md:mt-60 mb-50 md:mb-100">
+      <Container className="mt-40 md:mt-60 mb-50 md:mb-100 relative">
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
           <div
             className={classNames([

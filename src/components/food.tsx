@@ -1,8 +1,10 @@
 import classNames from "classnames";
 import parse from "html-react-parser";
+import Image from "next/image";
 import React from "react";
 import ArrowsRight from "../assets/icons/arrows-right.svg";
 import data from "../data/index.json";
+import { NEXT_IMAGE_DEFAULT_QUALITY } from "../lib/constants";
 import richtextStyles from "../styles/richtext.module.css";
 import Container from "./container";
 import Dot from "./dot";
@@ -18,6 +20,8 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
     id,
     headline,
     intro__html,
+    image1,
+    image2,
     body__html,
     menu__html,
     menuFood,
@@ -32,7 +36,7 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
       </Container>
 
       {/* Intro */}
-      <Container className="mt-40 md:mt-60 relative">
+      <Container className="mt-40 md:mt-60 relative z-10">
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
           <div
             className={classNames([
@@ -61,10 +65,16 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
             className={classNames(["col-span-2 md:col-start-1 md:col-end-2"])}
           >
             <div className="w-3/4 md:w-auto">
-              {/* TODO */}
-              <div className="aspect-[255/212] bg-brown-ci-light flex items-center justify-center">
-                Bild 1
-              </div>
+              <Image
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
+                layout="responsive"
+                src={image1.src}
+                alt={image1.alt}
+                width={image1.width}
+                height={image1.height}
+                objectFit="cover"
+                objectPosition={image1.objectPosition}
+              />
             </div>
           </div>
 
@@ -75,10 +85,16 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
             ])}
           >
             <div className="w-3/4 ml-auto md:w-auto md:ml-0">
-              {/* TODO */}
-              <div className="aspect-[255/212] bg-red-ci text-white flex items-center justify-center">
-                Bild 2
-              </div>
+              <Image
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
+                layout="responsive"
+                src={image2.src}
+                alt={image2.alt}
+                width={image2.width}
+                height={image2.height}
+                objectFit="cover"
+                objectPosition={image2.objectPosition}
+              />
             </div>
           </div>
 
