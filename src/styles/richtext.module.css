@@ -4,20 +4,45 @@
     @apply italic;
   }
 
+  & h2,
+  & h3 {
+    @apply font-fracture text-red-ci;
+    @apply m-0;
+  }
+
+  & h2 {
+    @apply text-26 md:text-29;
+  }
+
+  & h3 {
+    @apply text-21 md:text-23;
+  }
+
+  & h4 {
+    @apply italic;
+  }
+
   & ul {
-    list-style: disc inside;
+    list-style: "- " inside;
+  }
+
+  & a {
+    @apply transition-colors hover:text-red-ci;
   }
 
   /* Spacing */
   /* TODO */
-  & :is(p, address, ul, table, h2, h3, h4) {
+  & :is(p, address, ul, table, h2) {
     margin-top: 1em;
     margin-bottom: 1em;
   }
 
-  & li {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+  & :is(h2, h3, h4, br) + :is(p, address, ul, table) {
+    margin-top: 0;
+  }
+
+  & h2 {
+    @apply mt-40 md:mt-60 lg:mt-112;
   }
 
   /* General */
