@@ -8,6 +8,7 @@ import { NEXT_IMAGE_DEFAULT_QUALITY } from "../lib/constants";
 import richtextStyles from "../styles/richtext.module.css";
 import Container from "./container";
 import Dot from "./dot";
+import Gallery from "./gallery";
 import SectionHeading from "./section-heading";
 
 interface RestaurantSectionProps {
@@ -29,6 +30,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
     body__html,
     contentImage,
     outro__html,
+    gallery,
   } = restaurantData;
 
   const topSentinelRef = useRef<HTMLDivElement>(null);
@@ -246,9 +248,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
       {/* Gallery */}
       <Container>
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
-          <div className="aspect-square bg-brown-ci-light flex items-center justify-center">
-            Galerie
-          </div>
+          <Gallery gallery={gallery} />
         </div>
       </Container>
     </section>

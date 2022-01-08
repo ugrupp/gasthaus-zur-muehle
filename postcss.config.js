@@ -6,7 +6,7 @@ module.exports = {
     [
       "postcss-preset-env",
       {
-        stage: 1,
+        stage: 3,
         features: { "nesting-rules": false },
       },
     ],
