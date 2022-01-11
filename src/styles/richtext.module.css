@@ -6,7 +6,7 @@
 
   & h2,
   & h3 {
-    @apply font-fracture text-red-ci;
+    @apply font-fracture font-normal text-red-ci;
     @apply m-0;
   }
 

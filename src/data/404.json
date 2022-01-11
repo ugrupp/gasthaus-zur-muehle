@@ -7,5 +7,5 @@
     "alt": "",
     "objectPosition": "50% 50%"
   },
-  "text__html": "<p><strong class=\"font-fracture text-gray-ci\">404:</strong> die Seite konnte nicht gefunden werden.</p>"
+  "text__html": "<p><strong class=\"font-fracture font-normal text-gray-ci\">404:</strong> die Seite konnte nicht gefunden werden.</p>"
 }

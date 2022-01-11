@@ -172,7 +172,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
             className={classNames([
               richtextStyles.root,
               richtextStyles["size-4xl"],
-              "leading-supertight font-fracture",
+              "leading-supertight font-fracture font-normal",
               "text-red-ci",
             ])}
           >

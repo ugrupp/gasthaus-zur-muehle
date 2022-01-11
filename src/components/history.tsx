@@ -33,7 +33,7 @@ const HistorySection: React.FC<HistorySectionProps> = ({
             className={classNames([
               richtextStyles.root,
               richtextStyles["size-4xl"],
-              "leading-supertight font-fracture",
+              "leading-supertight font-fracture font-normal",
               "text-red-ci",
             ])}
           >

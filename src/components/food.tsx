@@ -42,7 +42,7 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
             className={classNames([
               richtextStyles.root,
               richtextStyles["size-4xl"],
-              "leading-supertight font-fracture",
+              "leading-supertight font-fracture font-normal",
               "text-red-ci",
             ])}
           >
@@ -169,7 +169,7 @@ const FoodMenuLink: React.FC<FoodMenuLinkProps> = ({ menu }) => {
       className={classNames([
         "flex items-center gap-x-20 justify-between",
         "border-current border-b py-10 md:py-12",
-        "text-red-ci font-fracture leading-supertight text-25 md:text-30",
+        "text-red-ci font-fracture font-normal leading-supertight text-25 md:text-30",
         "transition-colors hover:text-brown-ci",
       ])}
     >

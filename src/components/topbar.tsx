@@ -44,7 +44,7 @@ const Topbar: React.FC<TopbarProps> = () => {
           <div>
             {/* Menu toggler */}
             <button
-              className="md:hidden flex flex-col items-center gap-15 text-19 font-fracture text-red-ci"
+              className="md:hidden flex flex-col items-center gap-15 text-19 font-fracture font-normal text-red-ci"
               onClick={menuTogglerButtonHandler}
             >
               {/* Icon */}
@@ -60,7 +60,7 @@ const Topbar: React.FC<TopbarProps> = () => {
             <nav className="hidden md:flex flex-col gap-y-6 w-fit">
               {menu.map(({ href, label }) => (
                 <Link href={href} key={href}>
-                  <a className="flex items-center justify-between gap-20 md:text-28 lg:text-30 leading-none font-fracture transition-colors hover:text-red-ci group">
+                  <a className="flex items-center justify-between gap-20 md:text-28 lg:text-30 leading-none font-fracture font-normal transition-colors hover:text-red-ci group">
                     <span>{label}</span>
                     <ArrowsRightIcon className="opacity-0 group-hover:opacity-100 transition-opacity block h-[33px] w-[33px]" />
                   </a>

@@ -56,7 +56,7 @@ const OverlayMenu: React.FC<OverlayMenuProps> = () => {
                 <div>
                   {/* Menu closer */}
                   <button
-                    className="md:hidden flex flex-col items-center gap-15 text-19 font-fracture text-red-ci"
+                    className="md:hidden flex flex-col items-center gap-15 text-19 font-fracture font-normal text-red-ci"
                     onClick={closeHandler}
                   >
                     {/* Icon */}
@@ -89,7 +89,7 @@ const OverlayMenu: React.FC<OverlayMenuProps> = () => {
                   {menu.map(({ href, label }) => (
                     <Link href={href} key={href}>
                       <a
-                        className="inline-block text-38 leading-none font-fracture whitespace-nowrap"
+                        className="inline-block text-38 leading-none font-fracture font-normal whitespace-nowrap"
                         onClick={() => setMenuOpen(false)}
                       >
                         {label}

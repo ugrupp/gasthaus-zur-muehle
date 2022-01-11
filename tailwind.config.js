@@ -42,7 +42,8 @@ module.exports = {
         46: "46px",
       },
       fontFamily: {
-        fracture: "Brush Script MT",
+        fracture: ["eskapade-fraktur", "serif"],
+        serif: ["warnock-pro", "serif"],
       },
       lineHeight: {
         supertight: 1.08,

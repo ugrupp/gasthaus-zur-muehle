@@ -2,7 +2,7 @@ html,
 body {
   hyphens: auto;
   scroll-behavior: smooth;
-  @apply antialiased bg-white text-brown-ci font-serif;
+  @apply antialiased bg-white text-brown-ci font-serif font-light;
 }
 
 ::selection {

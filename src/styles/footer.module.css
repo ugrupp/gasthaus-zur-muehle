@@ -7,7 +7,7 @@
 }
 
 .info {
-  @apply font-fracture text-14 md:text-19 leading-normal;
+  @apply font-fracture font-normal text-14 md:text-19 leading-normal;
 
   & a {
     @apply font-serif text-13 md:text-18 transition-colors hover:text-gray-ci;
