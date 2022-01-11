@@ -1,4 +1,4 @@
-export const NEXT_IMAGE_DEFAULT_QUALITY = 85;
+export const NEXT_IMAGE_DEFAULT_QUALITY = 80;
 
 export const LAT_LNG: google.maps.LatLngLiteral = {
   lat: 47.84271,

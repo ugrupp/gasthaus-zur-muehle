@@ -45,7 +45,7 @@ const HistorySection: React.FC<HistorySectionProps> = ({
       {/* Images */}
       <Container className="mt-40 md:mt-50">
         <div className="px-20 md:px-100 max-w-2xl mx-auto box-content">
-          <div className="w-3/4 max-w-lg relative">
+          <div className="w-3/4 max-w-lg relative z-10">
             <Image
               quality={NEXT_IMAGE_DEFAULT_QUALITY}
               layout="responsive"

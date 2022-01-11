@@ -3,23 +3,23 @@
   "restaurant": {
     "id": "gasthaus",
     "heroImage": {
-      "src": "/images/dummy.jpg",
-      "width": 2392,
-      "height": 1260,
+      "src": "/images/1.jpg",
+      "width": 1333,
+      "height": 2000,
       "alt": "",
       "objectPosition": "50% 50%"
     },
     "image2": {
-      "src": "/images/dummy2.jpg",
-      "width": 480,
-      "height": 400,
+      "src": "/images/2.jpg",
+      "width": 2000,
+      "height": 1334,
       "alt": "",
       "objectPosition": "50% 50%"
     },
     "image3": {
-      "src": "/images/dummy3.jpg",
-      "width": 480,
-      "height": 400,
+      "src": "/images/3.jpg",
+      "width": 2000,
+      "height": 1333,
       "alt": "",
       "objectPosition": "50% 50%"
     },
@@ -28,9 +28,9 @@
     "intro__html": "<p><strong>Herzlich Willkommen</strong> in unserer Gaststätte mit Tradition. Unsere Mühle hat viel erlebt - so wie wir auch. Wir leben die Arbeit als Gastgeber mit Leidenschaft.</p>",
     "body__html": "<p>Wir betrachten das Herstellen von gutem Essen als wichtiges Handwerk. Wir kommen aus der Winzerei und haben lange Jahre Erfahrung im Betreiben einer Straußenwirtschaft. Vielleicht kennen Sie sie – <strong>die Ziegelhofstraußi in Ballrechten-Dottingen</strong>.</p><p>Wir haben unsere Produkte an über 50 Gaststätten weiter vermarktet. Wir wussten daher ein gutes Essen und einen guten Tropfen Wein schon immer zu schätzen und haben viel dafür getan, ein wertvoller Teil dieser Wertschöpfungskette zu sein.</p><p>Als unser Sohn Markus 2016 ins Alter kam, unseren gutgehenden Betrieb zu übernehmen, haben wir Platz gemacht und uns einen neuen Ort gesucht, wo wir unsere Leidenschaft leben können.</p><p><strong>Gefunden haben wir ihn im Gasthaus Mühle in Buggingen.</strong></p>",
     "contentImage": {
-      "src": "/images/dummy3.jpg",
-      "width": 480,
-      "height": 400,
+      "src": "/images/4.jpg",
+      "width": 2000,
+      "height": 1334,
       "alt": "",
       "objectPosition": "50% 50%"
     },
@@ -38,27 +38,9 @@
     "gallery": [
       {
         "image": {
-          "src": "/images/dummy2.jpg",
-          "width": 480,
-          "height": 400,
-          "alt": "",
-          "objectPosition": "50% 50%"
-        }
-      },
-      {
-        "image": {
-          "src": "/images/dummy.jpg",
-          "width": 2392,
-          "height": 1260,
-          "alt": "",
-          "objectPosition": "50% 50%"
-        }
-      },
-      {
-        "image": {
-          "src": "/images/dummy3.jpg",
-          "width": 480,
-          "height": 400,
+          "src": "/images/5.jpg",
+          "width": 2000,
+          "height": 1333,
           "alt": "",
           "objectPosition": "50% 50%"
         }
@@ -75,16 +57,16 @@
     "headline": "Essen",
     "intro__html": "<p>Wir kochen nach eigenen, oft alten Rezepturen, die wir über die Jahre weiterentwickelt und abgerundet haben. Unsere Bandbreite ist vielfältig und saisonal. Unsere Gerichte spiegeln die klassische badische Küche wider.</p>",
     "image1": {
-      "src": "/images/dummy2.jpg",
-      "width": 480,
-      "height": 400,
+      "src": "/images/9.jpg",
+      "width": 2000,
+      "height": 1333,
       "alt": "",
       "objectPosition": "50% 50%"
     },
     "image2": {
-      "src": "/images/dummy3.jpg",
-      "width": 480,
-      "height": 400,
+      "src": "/images/10.jpg",
+      "width": 2000,
+      "height": 1334,
       "alt": "",
       "objectPosition": "50% 50%"
     },
@@ -104,16 +86,16 @@
     "headline": "Geschichte",
     "intro__html": "<p>Unsere Mühle wurde im Jahr 1778 erbaut. Bis in die 1920er Jahre dreht sich hier auch das Mühlrad - genau an der Stelle wo heute unsere Speisen von der Küche in den Gastraum gereicht werden.</p>",
     "image1": {
-      "src": "/images/dummy3.jpg",
-      "width": 480,
-      "height": 400,
+      "src": "/images/14.jpg",
+      "width": 2000,
+      "height": 1429,
       "alt": "",
       "objectPosition": "50% 50%"
     },
     "image2": {
-      "src": "/images/dummy2.jpg",
-      "width": 480,
-      "height": 400,
+      "src": "/images/15.jpg",
+      "width": 2000,
+      "height": 2000,
       "alt": "",
       "objectPosition": "50% 50%"
     },
