@@ -92,11 +92,11 @@
     "menu__html": "<p>Lassen Sie sich von unserer Speisekarte schon mal dazu verführen, Lust auf den nächsten Besuch bei uns zu bekommen.</p>",
     "menuFood": {
       "label": "Speisen",
-      "href": "#"
+      "href": "/downloads/Gasthaus-zur-Muehle-Speisen.pdf"
     },
     "menuDrinks": {
       "label": "Getränke",
-      "href": "#"
+      "href": "/downloads/Gasthaus-zur-Muehle-Getraenke.pdf"
     }
   },
   "history": {
