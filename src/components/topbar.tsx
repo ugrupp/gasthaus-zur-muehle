@@ -1,9 +1,9 @@
-import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import ArrowsRightIcon from "../assets/icons/arrows-right.svg";
+import MenuIcon from "../assets/icons/menu.svg";
 import data from "../data/static.json";
 import { menuOpenState, topbarHeightState } from "../lib/state";
 import Contact from "./contact";
@@ -48,7 +48,7 @@ const Topbar: React.FC<TopbarProps> = () => {
               onClick={menuTogglerButtonHandler}
             >
               {/* Icon */}
-              <ArrowsRightIcon className="h-40 w-40" />
+              <MenuIcon className="h-40 w-40" />
 
               {/* Label */}
               <span className="[writing-mode:vertical-rl]">

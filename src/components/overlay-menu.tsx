@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { Fragment, useEffect } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
-import OpentimesIcon from "../assets/icons/opentimes.svg";
+import CloseIcon from "../assets/icons/close.svg";
 import data from "../data/static.json";
 import { menuOpenState, scrollLockState } from "../lib/state";
 import Contact from "./contact";
@@ -60,7 +60,7 @@ const OverlayMenu: React.FC<OverlayMenuProps> = () => {
                     onClick={closeHandler}
                   >
                     {/* Icon */}
-                    <OpentimesIcon className="h-40 w-40" />
+                    <CloseIcon className="h-40 w-40" />
                   </button>
                 </div>
 
