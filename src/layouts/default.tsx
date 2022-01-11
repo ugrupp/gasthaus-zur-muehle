@@ -11,7 +11,7 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ id = "", staticData, children }) => {
-  const renderFooter = id !== "404";
+  const renderFooter = id !== "404" && id !== "500";
 
   return (
     <div>

@@ -1,0 +1,12 @@
+{
+  "id": "500",
+  "bgImage": {
+    "src": "/images/14.jpg",
+    "width": 2000,
+    "height": 1429,
+    "alt": "",
+    "objectPosition": "51% 76%",
+    "blurDataURL": ""
+  },
+  "text__html": "<p><strong class=\"font-fracture font-normal text-gray-ci\">500:</strong> es ist ein Fehler aufgetreten.</p>"
+}
