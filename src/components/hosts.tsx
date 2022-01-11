@@ -41,7 +41,9 @@ const HostsSection: React.FC<HostsSectionProps> = ({
 
       {/* Carousel */}
       <div className="mt-50 md:mt-80">
-        <div className="bg-brown-ci-light h-280">Carousel</div>
+        <Container>
+          <div className="bg-brown-ci-light h-280">Carousel</div>
+        </Container>
       </div>
     </section>
   );

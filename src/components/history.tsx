@@ -20,7 +20,7 @@ const HistorySection: React.FC<HistorySectionProps> = ({
   const { id, headline, intro__html, image1, image2, body__html } = historyData;
 
   return (
-    <section id={id} className={className}>
+    <section id={id} className={classNames(className, "relative")}>
       {/* Headline */}
       <Container>
         <SectionHeading heading={headline} />

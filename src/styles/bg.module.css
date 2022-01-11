@@ -1,0 +1,27 @@
+.root {
+  background-repeat: repeat;
+  background-size: 68px;
+  background-position: center top;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.white {
+  background-image: url("/images/tile-white.png");
+}
+
+.gray {
+  background-image: url("/images/tile-gray.png");
+}
+
+.reverse {
+  mask-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-position-y: bottom;
+}

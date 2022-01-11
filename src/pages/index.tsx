@@ -28,7 +28,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
       <RestaurantSection restaurantData={data.restaurant} />
       <HostsSection hostsData={data.hosts} className="mt-80 md:mt-120" />
-      <FoodSection foodData={data.food} />
+      <FoodSection foodData={data.food} className="mt-112 md:mt-150" />
       <HistorySection historyData={data.history} className="mt-80 md:mt-120" />
     </>
   );

@@ -8,6 +8,8 @@ import data from "../data/static.json";
 import { menuOpenState, scrollLockState } from "../lib/state";
 import Contact from "./contact";
 import Container from "./container";
+import bgStyles from "../styles/bg.module.css";
+import classNames from "classnames";
 
 interface OverlayMenuProps {}
 
@@ -44,7 +46,11 @@ const OverlayMenu: React.FC<OverlayMenuProps> = () => {
       leaveFrom="transform opacity-100"
       leaveTo="transform opacity-0"
     >
-      <Dialog onClose={closeHandler} className="fixed z-40 inset-0 bg-gray-ci">
+      <Dialog
+        onClose={closeHandler}
+        className={classNames("fixed z-40 inset-0 bg-gray-ci")}
+      >
+        {/* Content */}
         <div className="overflow-auto h-full">
           {/* Double topbar */}
           <div
@@ -80,34 +86,45 @@ const OverlayMenu: React.FC<OverlayMenuProps> = () => {
             </Container>
           </div>
 
-          {/* Content */}
-          <Container className="py-30">
-            <div style={{ paddingRight: scrollLock }}>
-              <div className="max-w-[200px] mx-auto">
-                {/* Menu */}
-                <nav className="flex flex-col gap-y-8 w-fit">
-                  {menu.map(({ href, label }) => (
-                    <Link href={href} key={href}>
-                      <a
-                        className="inline-block text-38 leading-none font-fracture font-normal whitespace-nowrap"
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        {label}
-                      </a>
-                    </Link>
-                  ))}
-                </nav>
+          <div className="relative">
+            {/* Bg pattern */}
+            <div
+              className={classNames(
+                bgStyles.root,
+                bgStyles.white,
+                "absolute inset-0"
+              )}
+            />
 
-                {/* Contact */}
-                <div className="mt-70">
-                  <Contact
-                    opentimes__html={opentimes__html}
-                    phoneLink={phoneLink}
-                  />
+            {/* Content */}
+            <Container className="py-30 relative">
+              <div style={{ paddingRight: scrollLock }}>
+                <div className="max-w-[200px] mx-auto">
+                  {/* Menu */}
+                  <nav className="flex flex-col gap-y-8 w-fit">
+                    {menu.map(({ href, label }) => (
+                      <Link href={href} key={href}>
+                        <a
+                          className="inline-block text-38 leading-none font-fracture font-normal whitespace-nowrap"
+                          onClick={() => setMenuOpen(false)}
+                        >
+                          {label}
+                        </a>
+                      </Link>
+                    ))}
+                  </nav>
+
+                  {/* Contact */}
+                  <div className="mt-70">
+                    <Contact
+                      opentimes__html={opentimes__html}
+                      phoneLink={phoneLink}
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          </Container>
+            </Container>
+          </div>
         </div>
       </Dialog>
     </Transition>
