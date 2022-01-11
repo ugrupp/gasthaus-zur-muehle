@@ -7,21 +7,24 @@
       "width": 1333,
       "height": 2000,
       "alt": "",
-      "objectPosition": "54% 45%"
+      "objectPosition": "54% 45%",
+      "blurDataURL": ""
     },
     "image2": {
       "src": "/images/2.jpg",
       "width": 2000,
       "height": 1334,
       "alt": "",
-      "objectPosition": "46% 79%"
+      "objectPosition": "46% 79%",
+      "blurDataURL": ""
     },
     "image3": {
       "src": "/images/3.jpg",
       "width": 2000,
       "height": 1333,
       "alt": "",
-      "objectPosition": "79% 25%"
+      "objectPosition": "79% 25%",
+      "blurDataURL": ""
     },
     "headline": "Gasthaus",
     "images": [],
@@ -32,7 +35,8 @@
       "width": 2000,
       "height": 1334,
       "alt": "",
-      "objectPosition": "52% 50%"
+      "objectPosition": "52% 50%",
+      "blurDataURL": ""
     },
     "outro__html": "<p>Uns begeistert hier die Mischung aus Tradition und Moderne. Der richtige Ort, um unseren Gästen klassische badische Küche zeitgemäß zu servieren.</p>",
     "gallery": [
@@ -42,7 +46,8 @@
           "width": 2000,
           "height": 1333,
           "alt": "",
-          "objectPosition": "10% 60%"
+          "objectPosition": "10% 60%",
+          "blurDataURL": ""
         }
       }
     ]
@@ -61,14 +66,16 @@
       "width": 2000,
       "height": 1333,
       "alt": "",
-      "objectPosition": "52% 58%"
+      "objectPosition": "52% 58%",
+      "blurDataURL": ""
     },
     "image2": {
       "src": "/images/10.jpg",
       "width": 2000,
       "height": 1334,
       "alt": "",
-      "objectPosition": "44% 65%"
+      "objectPosition": "44% 65%",
+      "blurDataURL": ""
     },
     "body__html": "<p>Den Start machen im Frühjahr die Spargelgerichte, die im Sommer vom Pfifferling in allen möglichen Varianten abgelöst werden. Den Herbst und Winter prägen deftige Gerichte wie Schlachtplatte und Wild – verfeinert durch den allseits beliebten Feldsalat.</p><p>Unsere Zutaten beziehen wir, soweit es geht von regionalen Stellen. Unser Fleisch kommt von Metzgereien aus Bollschweil und Schallstadt. Und Wild gibt es auch nur, wenn es das regionale Angebot hergibt.</p>",
     "menu__html": "<p>Lassen Sie sich von unserer Speisekarte schon mal dazu verführen, Lust auf den nächsten Besuch bei uns zu bekommen.</p>",
@@ -90,14 +97,16 @@
       "width": 2000,
       "height": 1429,
       "alt": "",
-      "objectPosition": "51% 76%"
+      "objectPosition": "51% 76%",
+      "blurDataURL": ""
     },
     "image2": {
       "src": "/images/15.jpg",
       "width": 2000,
       "height": 2000,
       "alt": "",
-      "objectPosition": "49% 45%"
+      "objectPosition": "49% 45%",
+      "blurDataURL": ""
     },
     "body__html": "<p>Die Steine in der Mulde, die als Durchreiche dient, zeugen mit ihrer schwarzen Färbung vom Öl, mit dem das Mühlrad am Laufen gehalten wurde.</p><p>Der Gastraum wurde vor einigen Jahren modern renoviert – ohne den Charme des Alten zu verlieren. Im Innenbereich hat unser Gasthof ca. 70 Plätze, im Außenbereich finden 80 Personen Platz.</p><p>Wir freuen uns, dass unser Haus und unser Essen das ganze Jahr regen Zuspruch finden und sich unsere Entscheidung, uns diesem Kleinod als Pächter anzunehmen, auf ganzer Linie als gute Entscheidung erwiesen hat. Für unsere Gäste sind wir gerne das ganze Jahr „auf Trab“.</p><p><strong>Wir freuen uns auf Sie.</strong></p>"
   }

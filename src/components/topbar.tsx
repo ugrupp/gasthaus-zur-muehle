@@ -4,15 +4,17 @@ import { useEffect, useRef } from "react";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import ArrowsRightIcon from "../assets/icons/arrows-right.svg";
 import MenuIcon from "../assets/icons/menu.svg";
-import data from "../data/static.json";
+import staticData from "../data/static.json";
 import { menuOpenState, topbarHeightState } from "../lib/state";
 import Contact from "./contact";
 import Container from "./container";
 
-interface TopbarProps {}
+interface TopbarProps {
+  data: typeof staticData.topbar;
+}
 
-const Topbar: React.FC<TopbarProps> = () => {
-  const { menu, phoneLink, opentimes__html } = data.topbar;
+const Topbar: React.FC<TopbarProps> = ({ data }) => {
+  const { menu, phoneLink, opentimes__html } = data;
 
   // Topbar height
   const setTopbarHeight = useSetRecoilState(topbarHeightState);

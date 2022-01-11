@@ -121,6 +121,8 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
                   objectFit="cover"
                   objectPosition={heroImage.objectPosition}
                   priority={true}
+                  placeholder="blur"
+                  blurDataURL={heroImage.blurDataURL}
                 />
               </div>
             </div>
@@ -179,6 +181,8 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
                   objectFit="cover"
                   objectPosition={image2.objectPosition}
                   priority={true}
+                  placeholder="blur"
+                  blurDataURL={image2.blurDataURL}
                 />
               </div>
             </div>
@@ -197,6 +201,8 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
                   objectFit="cover"
                   objectPosition={image3.objectPosition}
                   priority={true}
+                  placeholder="blur"
+                  blurDataURL={image3.blurDataURL}
                 />
               </div>
             </div>
@@ -267,6 +273,8 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
                   alt={contentImage.alt}
                   width={contentImage.width}
                   height={contentImage.height}
+                  placeholder="blur"
+                  blurDataURL={contentImage.blurDataURL}
                 />
               </div>
             </div>

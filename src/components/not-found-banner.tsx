@@ -36,6 +36,8 @@ const NotFoundBanner: React.FC<NotFoundBannerProps> = ({
           objectFit="cover"
           objectPosition={bgImage.objectPosition}
           priority={true}
+          placeholder="blur"
+          blurDataURL={bgImage.blurDataURL}
         />
       </div>
 

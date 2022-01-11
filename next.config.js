@@ -1,5 +1,7 @@
+const { withPlaiceholder } = require("@plaiceholder/next");
+
 /** @type {import('next').NextConfig} */
-module.exports = {
+module.exports = withPlaiceholder({
   reactStrictMode: true,
   typescript: {
     ignoreBuildErrors: true,
@@ -14,4 +16,4 @@ module.exports = {
 
     return config;
   },
-};
+});

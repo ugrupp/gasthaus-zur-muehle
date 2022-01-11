@@ -46,6 +46,8 @@ const Gallery: React.FC<GalleryProps> = ({ gallery }) => {
               alt={image.alt}
               width={image.width}
               height={image.height}
+              placeholder="blur"
+              blurDataURL={image.blurDataURL}
             />
           </SwiperSlide>
         ))}

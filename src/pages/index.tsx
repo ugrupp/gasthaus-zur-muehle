@@ -6,11 +6,14 @@ import HistorySection from "../components/history";
 import HostsSection from "../components/hosts";
 import RestaurantSection from "../components/restaurant";
 import data from "../data/index.json";
+import staticData from "../data/static.json";
+import { generateBlurDataURLs } from "../lib/helpers";
 
 export const getStaticProps = async () => {
   return {
     props: {
-      data,
+      data: await generateBlurDataURLs(data),
+      staticData: await generateBlurDataURLs(staticData),
     },
   };
 };

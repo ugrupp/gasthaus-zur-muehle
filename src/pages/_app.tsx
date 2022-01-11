@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
 
-      <Layout id={pageProps?.data?.id}>
+      <Layout id={pageProps?.data?.id} staticData={pageProps.staticData}>
         <Component {...pageProps} />
       </Layout>
     </RecoilRoot>

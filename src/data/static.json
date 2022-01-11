@@ -32,7 +32,8 @@
       "width": 4032,
       "height": 3024,
       "alt": "",
-      "objectPosition": "50% 50%"
+      "objectPosition": "50% 50%",
+      "blurDataURL": ""
     },
     "address__html": "Untere Mühlenstraße 18 <br />79426 Buggingen",
     "phoneLink": {

@@ -3,17 +3,19 @@ import React from "react";
 import Footer from "../components/footer";
 import OverlayMenu from "../components/overlay-menu";
 import Topbar from "../components/topbar";
+import staticData from "../data/static.json";
 
 interface LayoutProps {
   id?: string;
+  staticData: typeof staticData;
 }
 
-const Layout: React.FC<LayoutProps> = ({ id = "", children }) => {
+const Layout: React.FC<LayoutProps> = ({ id = "", staticData, children }) => {
   const renderFooter = id !== "404";
 
   return (
     <div>
-      <Topbar />
+      <Topbar data={staticData.topbar} />
       <OverlayMenu />
 
       <main
@@ -24,7 +26,7 @@ const Layout: React.FC<LayoutProps> = ({ id = "", children }) => {
         {children}
       </main>
 
-      {renderFooter && <Footer />}
+      {renderFooter && <Footer data={staticData.footer} />}
     </div>
   );
 };

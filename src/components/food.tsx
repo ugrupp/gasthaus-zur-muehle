@@ -120,6 +120,8 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
                   height={image1.height}
                   objectFit="cover"
                   objectPosition={image1.objectPosition}
+                  placeholder="blur"
+                  blurDataURL={image1.blurDataURL}
                 />
               </div>
             </div>
@@ -140,6 +142,8 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
                   height={image2.height}
                   objectFit="cover"
                   objectPosition={image2.objectPosition}
+                  placeholder="blur"
+                  blurDataURL={image2.blurDataURL}
                 />
               </div>
             </div>

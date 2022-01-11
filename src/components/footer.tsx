@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 import OpentimesIcon from "../assets/icons/opentimes.svg";
 import PhoneIcon from "../assets/icons/phone.svg";
-import data from "../data/static.json";
+import staticData from "../data/static.json";
 import { NEXT_IMAGE_DEFAULT_QUALITY } from "../lib/constants";
 import styles from "../styles/footer.module.css";
 import richtextStyles from "../styles/richtext.module.css";
@@ -13,9 +13,11 @@ import Container from "./container";
 import Dot from "./dot";
 import Map from "./map";
 
-interface FooterProps {}
+interface FooterProps {
+  data: typeof staticData.footer;
+}
 
-const Footer: React.FC<FooterProps> = () => {
+const Footer: React.FC<FooterProps> = ({ data }) => {
   const {
     id,
     bgImage,
@@ -24,7 +26,7 @@ const Footer: React.FC<FooterProps> = () => {
     opentimes__html,
     address__html,
     imprint__html,
-  } = data.footer;
+  } = data;
 
   return (
     <footer className="bg-white">
@@ -43,6 +45,8 @@ const Footer: React.FC<FooterProps> = () => {
             alt={bgImage.alt}
             objectFit="cover"
             objectPosition={bgImage.objectPosition}
+            placeholder="blur"
+            blurDataURL={bgImage.blurDataURL}
           />
         </div>
       </Container>
