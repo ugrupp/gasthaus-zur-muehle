@@ -26,6 +26,7 @@
   },
 
   "footer": {
+    "id": "anfahrt",
     "bgImage": {
       "src": "/images/textur-wand-1.jpg",
       "width": 4032,

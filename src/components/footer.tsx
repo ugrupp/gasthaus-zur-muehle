@@ -17,6 +17,7 @@ interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
   const {
+    id,
     bgImage,
     menu,
     phoneLink,
@@ -46,17 +47,15 @@ const Footer: React.FC<FooterProps> = () => {
         </div>
       </Container>
 
-      <div
-        className="mt-[-225px] md:mt-[-450px] min-h-[225px] md:min-h-[450px] text-gray-ci selection-inverted relative"
-        id="anfahrt"
-      >
+      <div className="mt-[-225px] md:mt-[-450px] min-h-[225px] md:min-h-[450px] text-gray-ci selection-inverted relative">
         {/* Background */}
         <div className="bg-red-ci mix-blend-multiply absolute inset-0"></div>
 
         {/* Content */}
         <div className="relative">
-          <Container className="pt-80 pb-40 md:pt-112 md:pb-60">
+          <Container className="pt-80 md:pt-120 pb-40 md:pb-60">
             <div
+              id={id}
               className={classNames(
                 "px-20 md:px-100 max-w-2xl mx-auto box-content",
                 "flex flex-col items-center"

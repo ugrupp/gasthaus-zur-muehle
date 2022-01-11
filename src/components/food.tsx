@@ -47,10 +47,7 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
   }, []);
 
   return (
-    <section
-      id={id}
-      className={classNames(className, "pt-80 md:pt-120 relative")}
-    >
+    <section className={classNames(className, "pt-80 md:pt-120 relative")}>
       {/* Background */}
       <div
         className="bg-gray-ci absolute inset-0"
@@ -80,7 +77,7 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
       {/* Section content */}
       <div className="relative">
         {/* Headline */}
-        <Container>
+        <Container id={id}>
           <SectionHeading heading={headline} />
         </Container>
 

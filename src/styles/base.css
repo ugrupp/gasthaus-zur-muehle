@@ -2,6 +2,7 @@ html,
 body {
   hyphens: auto;
   scroll-behavior: smooth;
+  @apply scroll-pt-80 md:scroll-pt-120;
   @apply antialiased bg-white text-brown-ci font-serif font-light;
 }
 
