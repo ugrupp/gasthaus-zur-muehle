@@ -81,7 +81,7 @@ const Footer: React.FC<FooterProps> = () => {
                   "mt-50 text-center relative z-10",
                   richtextStyles.root,
                   richtextStyles["size-lg"],
-                  "leading-tight"
+                  "leading-snug"
                 )}
               >
                 {parse(address__html)}
@@ -119,7 +119,7 @@ const Footer: React.FC<FooterProps> = () => {
                       className={classNames(
                         richtextStyles.root,
                         richtextStyles["size-lg"],
-                        "leading-tight"
+                        "leading-snug"
                       )}
                     >
                       {content}

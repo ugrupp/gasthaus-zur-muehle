@@ -38,7 +38,7 @@ const Contact: React.FC<ContactProps> = ({ phoneLink, opentimes__html }) => {
           <div
             className={classNames(
               richtextStyles.root,
-              "text-17 md:text-15 lg:text-17 leading-tight whitespace-nowrap"
+              "text-17 md:text-15 lg:text-17 leading-snug whitespace-nowrap"
             )}
           >
             {content}

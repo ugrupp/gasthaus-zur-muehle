@@ -31,7 +31,7 @@ const HostsSection: React.FC<HostsSectionProps> = ({
             className={classNames([
               richtextStyles.root,
               richtextStyles["size-lg"],
-              "leading-tight",
+              "leading-snug",
             ])}
           >
             {parse(intro__html)}

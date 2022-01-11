@@ -78,7 +78,7 @@ const Gallery: React.FC<GalleryProps> = ({ gallery }) => {
 
       {/* Pagination */}
       <div
-        className="absolute z-10 bottom-0 right-0 bg-white px-10 py-8 md:px-15 md:py-12 text-12 md:text-17 leading-tight pointer-events-none"
+        className="absolute z-10 bottom-0 right-0 bg-white px-10 py-8 md:px-15 md:py-12 text-12 md:text-17 leading-snug pointer-events-none"
         ref={(node) => setPaginationEl(node)}
       />
     </div>

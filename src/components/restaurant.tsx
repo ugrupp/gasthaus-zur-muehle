@@ -202,7 +202,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
               className={classNames([
                 richtextStyles.root,
                 richtextStyles["size-base"],
-                "leading-tight",
+                "leading-snug",
               ])}
             >
               {parse(body__html)}
@@ -237,7 +237,7 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
             className={classNames([
               richtextStyles.root,
               richtextStyles["size-lg"],
-              "leading-tight",
+              "leading-snug",
             ])}
           >
             {parse(outro__html)}

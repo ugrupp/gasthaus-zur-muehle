@@ -22,7 +22,7 @@ const TwoColContent: React.FC<TwoColContentProps> = ({ col1, col2 }) => {
           className={classNames(
             richtextStyles.root,
             richtextStyles["size-base"],
-            "leading-tight"
+            "leading-snug"
           )}
         >
           {parse(col1)}
@@ -31,7 +31,7 @@ const TwoColContent: React.FC<TwoColContentProps> = ({ col1, col2 }) => {
           className={classNames(
             richtextStyles.root,
             richtextStyles["size-base"],
-            "leading-tight"
+            "leading-snug"
           )}
         >
           {parse(col2)}

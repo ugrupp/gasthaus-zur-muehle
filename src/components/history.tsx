@@ -80,7 +80,7 @@ const HistorySection: React.FC<HistorySectionProps> = ({
             className={classNames([
               richtextStyles.root,
               richtextStyles["size-lg"],
-              "leading-tight",
+              "leading-snug",
             ])}
           >
             {parse(body__html)}

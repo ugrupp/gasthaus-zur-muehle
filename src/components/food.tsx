@@ -110,7 +110,7 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
               className={classNames([
                 richtextStyles.root,
                 richtextStyles["size-base"],
-                "leading-tight",
+                "leading-snug",
               ])}
             >
               {parse(body__html)}
@@ -127,7 +127,7 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
             className={classNames([
               richtextStyles.root,
               richtextStyles["size-lg"],
-              "leading-tight",
+              "leading-snug",
             ])}
           >
             {parse(menu__html)}

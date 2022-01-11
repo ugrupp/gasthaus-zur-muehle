@@ -47,6 +47,8 @@ module.exports = {
       },
       lineHeight: {
         supertight: 1.08,
+        tight: 1.21,
+        snug: 1.333,
       },
       maxWidth: {
         lg: 480,
