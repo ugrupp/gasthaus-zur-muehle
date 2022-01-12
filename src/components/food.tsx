@@ -7,6 +7,7 @@ import data from "../data/index.json";
 import { NEXT_IMAGE_DEFAULT_QUALITY } from "../lib/constants";
 import bgStyles from "../styles/bg.module.css";
 import richtextStyles from "../styles/richtext.module.css";
+import Carousel from "./carousel";
 import Container from "./container";
 import Dot from "./dot";
 import SectionHeading from "./section-heading";
@@ -27,6 +28,7 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
     menu__html,
     menuFood,
     menuDrinks,
+    carousel,
   } = foodData;
 
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -193,8 +195,8 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
 
         {/* Carousel */}
         <div className="mt-80 md:mt-120" ref={carouselRef}>
-          <Container>
-            <div className="bg-brown-ci-light h-280">Carousel</div>
+          <Container className="!px-0 sm:!px-0 xl:!px-60">
+            <Carousel carousel={carousel} />
           </Container>
         </div>
       </div>

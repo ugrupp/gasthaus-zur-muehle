@@ -3,6 +3,7 @@ import parse from "html-react-parser";
 import React from "react";
 import data from "../data/index.json";
 import richtextStyles from "../styles/richtext.module.css";
+import Carousel from "./carousel";
 import Container from "./container";
 import SectionHeading from "./section-heading";
 
@@ -15,7 +16,7 @@ const HostsSection: React.FC<HostsSectionProps> = ({
   hostsData,
   className,
 }) => {
-  const { id, headline, intro__html } = hostsData;
+  const { id, headline, intro__html, carousel } = hostsData;
 
   return (
     <section id={id} className={className}>
@@ -41,8 +42,8 @@ const HostsSection: React.FC<HostsSectionProps> = ({
 
       {/* Carousel */}
       <div className="mt-50 md:mt-80">
-        <Container>
-          <div className="bg-brown-ci-light h-280">Carousel</div>
+        <Container className="!px-0 sm:!px-0 xl:!px-60">
+          <Carousel carousel={carousel} />
         </Container>
       </div>
     </section>
