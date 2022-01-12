@@ -60,6 +60,12 @@
   }
 }
 
+.inverted {
+  & a {
+    @apply hover:text-brown-ci-light;
+  }
+}
+
 .size-base {
   @apply text-16 md:text-20 xl:text-21;
 }

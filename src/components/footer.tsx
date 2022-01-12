@@ -101,14 +101,7 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
                   {
                     key: "phone",
                     Icon: PhoneIcon,
-                    content: (
-                      <a
-                        href={phoneLink.href}
-                        className="transition-colors hover:text-brown-ci-light"
-                      >
-                        {phoneLink.label}
-                      </a>
-                    ),
+                    content: <a href={phoneLink.href}>{phoneLink.label}</a>,
                   },
                   {
                     key: "opentimes",
@@ -121,6 +114,7 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
                     <div
                       className={classNames(
                         richtextStyles.root,
+                        richtextStyles.inverted,
                         richtextStyles["size-lg"],
                         "leading-snug"
                       )}
