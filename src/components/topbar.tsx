@@ -5,6 +5,7 @@ import { useRecoilState, useSetRecoilState } from "recoil";
 import ArrowsRightIcon from "../assets/icons/arrows-right.svg";
 import MenuIcon from "../assets/icons/menu.svg";
 import staticData from "../data/static.json";
+import { NEXT_IMAGE_DEFAULT_QUALITY } from "../lib/constants";
 import { menuOpenState, topbarHeightState } from "../lib/state";
 import Contact from "./contact";
 import Container from "./container";
@@ -75,6 +76,7 @@ const Topbar: React.FC<TopbarProps> = ({ data }) => {
           <Link href="/">
             <a className="w-[200px] md:w-[305px] block">
               <Image
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
                 src="/images/logo.svg"
                 alt="Zur Mühle"
                 width={305.232}

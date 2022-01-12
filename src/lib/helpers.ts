@@ -16,7 +16,8 @@ export const generateBlurDataURLs = async (data: any) => {
 
       // Update blur data url values
       if (typeof value?.blurDataURL !== "undefined" && !!value?.src) {
-        const blurDataURL = (await getPlaiceholder(value.src))?.base64;
+        const blurDataURL = (await getPlaiceholder(value.src, { size: 32 }))
+          ?.base64;
         if (!!blurDataURL) {
           value = {
             ...value,
