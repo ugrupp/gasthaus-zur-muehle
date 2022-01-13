@@ -2,7 +2,7 @@ import { Transition } from "@headlessui/react";
 import classNames from "classnames";
 import NextImage, { ImageProps as NextImageProps } from "next/image";
 import React, { useState } from "react";
-import { Image as ImageType } from "../models/image";
+import { Image as ImageType } from "../types/image";
 
 interface ImageProps {
   wrapperProps?: React.HTMLProps<HTMLDivElement>;

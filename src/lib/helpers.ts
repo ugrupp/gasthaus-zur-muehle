@@ -1,6 +1,6 @@
 import path from "path";
 import { getPlaiceholder } from "plaiceholder";
-import sharp from "sharp";
+const ColorThief = require("colorthief");
 
 // Set up blur data URL and dominant color for images
 export const generateImagePlaceholders = async (data: any) => {
@@ -30,9 +30,9 @@ export const generateImagePlaceholders = async (data: any) => {
 
       // Update dominant color values
       if (typeof value?.dominantColor !== "undefined" && !!value?.src) {
-        const {
-          dominant: { r, g, b },
-        } = await sharp(path.join("./public/", value.src)).stats();
+        const [r, g, b] = await ColorThief.getColor(
+          path.join("./public/", value.src)
+        );
         const dominantColor = `rgb(${r},${g},${b})`;
 
         if (!!dominantColor) {
