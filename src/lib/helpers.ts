@@ -1,5 +1,4 @@
 import path from "path";
-import { getPlaiceholder } from "plaiceholder";
 const ColorThief = require("colorthief");
 
 // Set up blur data URL and dominant color for images
@@ -15,18 +14,6 @@ export const generateImagePlaceholders = async (data: any) => {
 
     for (key in inObject) {
       value = inObject[key];
-
-      // Update blur data url values
-      if (typeof value?.blurDataURL !== "undefined" && !!value?.src) {
-        const blurDataURL = (await getPlaiceholder(value.src, { size: 32 }))
-          ?.base64;
-        if (!!blurDataURL) {
-          value = {
-            ...value,
-            blurDataURL,
-          };
-        }
-      }
 
       // Update dominant color values
       if (typeof value?.dominantColor !== "undefined" && !!value?.src) {

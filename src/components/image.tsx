@@ -1,5 +1,6 @@
 import { Transition } from "@headlessui/react";
 import classNames from "classnames";
+import { omit } from "lodash";
 import NextImage, { ImageProps as NextImageProps } from "next/image";
 import React, { useState } from "react";
 import { Image as ImageType } from "../types/image";
@@ -34,7 +35,12 @@ const Image: React.FC<
       className={classNames("relative", wrapperProps?.className)}
     >
       {/* Image */}
-      <NextImage {...props} onLoadingComplete={onLoadingComplete} />
+      <NextImage
+        {...(placeholderType === "blur"
+          ? props
+          : omit(props, ["placeholder", "blurDataURL"]))}
+        onLoadingComplete={onLoadingComplete}
+      />
 
       {/* Dominant color overlay */}
       {placeholderType === "dominant" && !!dominantColor && (
