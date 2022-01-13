@@ -6,7 +6,8 @@
     "height": 1429,
     "alt": "",
     "objectPosition": "51% 76%",
-    "blurDataURL": ""
+    "blurDataURL": "",
+    "dominantColor": ""
   },
   "text__html": "<p><strong class=\"font-fracture font-normal text-gray-ci\">404:</strong> die Seite konnte nicht gefunden werden.</p>"
 }

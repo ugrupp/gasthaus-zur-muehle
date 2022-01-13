@@ -1,10 +1,10 @@
 import classNames from "classnames";
 import parse from "html-react-parser";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import OpentimesIcon from "../assets/icons/opentimes.svg";
 import PhoneIcon from "../assets/icons/phone.svg";
+import Image from "../components/image";
 import staticData from "../data/static.json";
 import { NEXT_IMAGE_DEFAULT_QUALITY } from "../lib/constants";
 import styles from "../styles/footer.module.css";
@@ -32,28 +32,28 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
     <footer className="bg-white">
       {/* Image */}
       <Container>
-        <div
-          className={classNames(
-            styles["bg-image"],
-            "w-full h-[450px] md:h-[900px] relative"
-          )}
-        >
-          <Image
-            quality={NEXT_IMAGE_DEFAULT_QUALITY}
-            layout="fill"
-            src={bgImage.src}
-            alt={bgImage.alt}
-            objectFit="cover"
-            objectPosition={bgImage.objectPosition}
-            placeholder="blur"
-            blurDataURL={bgImage.blurDataURL}
-          />
-        </div>
+        <Image
+          wrapperProps={{
+            className: classNames(
+              styles["bg-image"],
+              "w-full h-[450px] md:h-[900px]"
+            ),
+          }}
+          quality={NEXT_IMAGE_DEFAULT_QUALITY}
+          layout="fill"
+          src={bgImage.src}
+          alt={bgImage.alt}
+          objectFit="cover"
+          objectPosition={bgImage.objectPosition}
+          placeholder="blur"
+          blurDataURL={bgImage.blurDataURL}
+          dominantColor={bgImage.dominantColor}
+        />
       </Container>
 
       <div className="mt-[-225px] md:mt-[-450px] min-h-[225px] md:min-h-[450px] text-gray-ci selection-inverted relative">
         {/* Background */}
-        <div className="bg-red-ci mix-blend-multiply absolute inset-0"></div>
+        <div className="bg-red-ci mix-blend-multiply absolute inset-0" />
 
         {/* Content */}
         <div className="relative">

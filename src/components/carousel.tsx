@@ -1,9 +1,9 @@
 import classNames from "classnames";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper/types";
+import Image from "../components/image";
 import data from "../data/index.json";
 import { NEXT_IMAGE_DEFAULT_QUALITY } from "../lib/constants";
 import richtextStyles from "../styles/richtext.module.css";
@@ -61,25 +61,24 @@ const Carousel: React.FC<CarouselProps> = ({
       >
         {carousel.map(({ image, caption }, idx) => (
           <SwiperSlide key={idx}>
-            <div
-              className="swiper-image relative h-[212px] md:h-[270px] lg:h-[400px] aspect-[480/400]"
-              style={
-                useIntrinsicRatio
+            <Image
+              wrapperProps={{
+                className:
+                  "swiper-image h-[212px] md:h-[270px] lg:h-[400px] aspect-[480/400]",
+                style: useIntrinsicRatio
                   ? { aspectRatio: `${image.width}/${image.height}` }
-                  : undefined
-              }
-            >
-              <Image
-                quality={NEXT_IMAGE_DEFAULT_QUALITY}
-                layout="fill"
-                src={image.src}
-                alt={image.alt}
-                placeholder="blur"
-                blurDataURL={image.blurDataURL}
-                objectFit="cover"
-                objectPosition={image.objectPosition}
-              />
-            </div>
+                  : undefined,
+              }}
+              quality={NEXT_IMAGE_DEFAULT_QUALITY}
+              layout="fill"
+              src={image.src}
+              alt={image.alt}
+              placeholder="blur"
+              blurDataURL={image.blurDataURL}
+              objectFit="cover"
+              objectPosition={image.objectPosition}
+              dominantColor={image.dominantColor}
+            />
 
             {/* Caption */}
             {!!caption && (

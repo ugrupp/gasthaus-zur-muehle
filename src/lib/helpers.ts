@@ -1,7 +1,9 @@
+import path from "path";
 import { getPlaiceholder } from "plaiceholder";
+import sharp from "sharp";
 
-// Set up blur data URLs for images
-export const generateBlurDataURLs = async (data: any) => {
+// Set up blur data URL and dominant color for images
+export const generateImagePlaceholders = async (data: any) => {
   const deepCustomize = async (inObject: any): Promise<any> => {
     if (typeof inObject !== "object" || inObject === null) {
       return inObject; // Return the value if inObject is not an object
@@ -22,6 +24,21 @@ export const generateBlurDataURLs = async (data: any) => {
           value = {
             ...value,
             blurDataURL,
+          };
+        }
+      }
+
+      // Update dominant color values
+      if (typeof value?.dominantColor !== "undefined" && !!value?.src) {
+        const {
+          dominant: { r, g, b },
+        } = await sharp(path.join("./public/", value.src)).stats();
+        const dominantColor = `rgb(${r},${g},${b})`;
+
+        if (!!dominantColor) {
+          value = {
+            ...value,
+            dominantColor,
           };
         }
       }

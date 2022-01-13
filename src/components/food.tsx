@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import parse from "html-react-parser";
-import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import ArrowsRight from "../assets/icons/arrows-right.svg";
+import Image from "../components/image";
 import data from "../data/index.json";
 import { NEXT_IMAGE_DEFAULT_QUALITY } from "../lib/constants";
 import bgStyles from "../styles/bg.module.css";
@@ -112,20 +112,20 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
             <div
               className={classNames(["col-span-2 md:col-start-1 md:col-end-2"])}
             >
-              <div className="w-3/4 md:w-auto">
-                <Image
-                  quality={NEXT_IMAGE_DEFAULT_QUALITY}
-                  layout="responsive"
-                  src={image1.src}
-                  alt={image1.alt}
-                  width={image1.width}
-                  height={image1.height}
-                  objectFit="cover"
-                  objectPosition={image1.objectPosition}
-                  placeholder="blur"
-                  blurDataURL={image1.blurDataURL}
-                />
-              </div>
+              <Image
+                wrapperProps={{ className: "w-3/4 md:w-auto" }}
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
+                layout="responsive"
+                src={image1.src}
+                alt={image1.alt}
+                width={image1.width}
+                height={image1.height}
+                objectFit="cover"
+                objectPosition={image1.objectPosition}
+                placeholder="blur"
+                blurDataURL={image1.blurDataURL}
+                dominantColor={image1.dominantColor}
+              />
             </div>
 
             <div
@@ -134,20 +134,20 @@ const FoodSection: React.FC<FoodSectionProps> = ({ foodData, className }) => {
                 "md:mt-120 lg:mt-200 lg:row-span-2",
               ])}
             >
-              <div className="w-3/4 ml-auto md:w-auto md:ml-0">
-                <Image
-                  quality={NEXT_IMAGE_DEFAULT_QUALITY}
-                  layout="responsive"
-                  src={image2.src}
-                  alt={image2.alt}
-                  width={image2.width}
-                  height={image2.height}
-                  objectFit="cover"
-                  objectPosition={image2.objectPosition}
-                  placeholder="blur"
-                  blurDataURL={image2.blurDataURL}
-                />
-              </div>
+              <Image
+                wrapperProps={{ className: "w-3/4 ml-auto md:w-auto md:ml-0" }}
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
+                layout="responsive"
+                src={image2.src}
+                alt={image2.alt}
+                width={image2.width}
+                height={image2.height}
+                objectFit="cover"
+                objectPosition={image2.objectPosition}
+                placeholder="blur"
+                blurDataURL={image2.blurDataURL}
+                dominantColor={image2.dominantColor}
+              />
             </div>
 
             {/* Body */}

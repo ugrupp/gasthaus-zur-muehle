@@ -1,10 +1,10 @@
 import classNames from "classnames";
-import Image from "next/image";
 import { useState } from "react";
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ArrowsRightBg from "../assets/icons/arrows-right-bg.svg";
+import Image from "../components/image";
 import data from "../data/index.json";
 import { NEXT_IMAGE_DEFAULT_QUALITY } from "../lib/constants";
 
@@ -48,6 +48,7 @@ const Gallery: React.FC<GalleryProps> = ({ gallery }) => {
               height={image.height}
               placeholder="blur"
               blurDataURL={image.blurDataURL}
+              dominantColor={image.dominantColor}
             />
           </SwiperSlide>
         ))}

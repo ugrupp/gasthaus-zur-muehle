@@ -5,14 +5,14 @@ import React from "react";
 import TwoColContent from "../components/two-col-content";
 import data from "../data/impressum.json";
 import staticData from "../data/static.json";
-import { generateBlurDataURLs } from "../lib/helpers";
+import { generateImagePlaceholders } from "../lib/helpers";
 import bgStyles from "../styles/bg.module.css";
 
 export const getStaticProps = async () => {
   return {
     props: {
-      data: await generateBlurDataURLs(data),
-      staticData: await generateBlurDataURLs(staticData),
+      data: await generateImagePlaceholders(data),
+      staticData: await generateImagePlaceholders(staticData),
     },
   };
 };

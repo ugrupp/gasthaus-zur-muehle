@@ -1,12 +1,12 @@
 import classNames from "classnames";
 import parse from "html-react-parser";
-import Image from "next/image";
 import { useRecoilValue } from "recoil";
 import data from "../data/404.json";
 import { NEXT_IMAGE_DEFAULT_QUALITY } from "../lib/constants";
 import { topbarHeightState } from "../lib/state";
 import richtextStyles from "../styles/richtext.module.css";
 import Container from "./container";
+import Image from "./image";
 
 interface NotFoundBannerProps {
   bgImage: typeof data.bgImage;
@@ -27,8 +27,9 @@ const NotFoundBanner: React.FC<NotFoundBannerProps> = ({
       }}
     >
       {/* Background image */}
-      <div className={classNames("mix-blend-multiply", "absolute inset-0")}>
+      <div className="absolute inset-0 mix-blend-multiply">
         <Image
+          wrapperProps={{ className: "h-full w-full" }}
           quality={NEXT_IMAGE_DEFAULT_QUALITY}
           layout="fill"
           src={bgImage.src}
@@ -38,6 +39,7 @@ const NotFoundBanner: React.FC<NotFoundBannerProps> = ({
           priority={true}
           placeholder="blur"
           blurDataURL={bgImage.blurDataURL}
+          dominantColor={bgImage.dominantColor}
         />
       </div>
 

@@ -4,13 +4,13 @@ import React from "react";
 import NotFoundBanner from "../components/not-found-banner";
 import data from "../data/404.json";
 import staticData from "../data/static.json";
-import { generateBlurDataURLs } from "../lib/helpers";
+import { generateImagePlaceholders } from "../lib/helpers";
 
 export const getStaticProps = async () => {
   return {
     props: {
-      data: await generateBlurDataURLs(data),
-      staticData: await generateBlurDataURLs(staticData),
+      data: await generateImagePlaceholders(data),
+      staticData: await generateImagePlaceholders(staticData),
     },
   };
 };

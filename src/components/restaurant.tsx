@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import parse from "html-react-parser";
-import Image from "next/image";
+import Image from "../components/image";
 import React, { useEffect, useRef, useState } from "react";
 import ArrowsRight from "../assets/icons/arrows-right.svg";
 import data from "../data/index.json";
@@ -105,26 +105,26 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
               className="px-20 md:px-100 max-w-2xl mx-auto box-content"
               ref={topSentinelRef}
             >
-              <div
-                className="w-full h-[570px] max-h-[570px] relative"
-                style={{
-                  height: !!heroImageHeight
-                    ? `${heroImageHeight}px`
-                    : undefined,
+              <Image
+                wrapperProps={{
+                  className: "w-full h-[570px] max-h-[570px]",
+                  style: {
+                    height: !!heroImageHeight
+                      ? `${heroImageHeight}px`
+                      : undefined,
+                  },
                 }}
-              >
-                <Image
-                  quality={NEXT_IMAGE_DEFAULT_QUALITY}
-                  layout="fill"
-                  src={heroImage.src}
-                  alt={heroImage.alt}
-                  objectFit="cover"
-                  objectPosition={heroImage.objectPosition}
-                  priority={true}
-                  placeholder="blur"
-                  blurDataURL={heroImage.blurDataURL}
-                />
-              </div>
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
+                layout="fill"
+                src={heroImage.src}
+                alt={heroImage.alt}
+                objectFit="cover"
+                objectPosition={heroImage.objectPosition}
+                priority={true}
+                placeholder="blur"
+                blurDataURL={heroImage.blurDataURL}
+                dominantColor={heroImage.dominantColor}
+              />
             </div>
 
             {/* Scroll indicator */}
@@ -170,41 +170,41 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
                 "md:mb-150 xl:mb-280",
               ])}
             >
-              <div className="w-3/4 md:w-auto">
-                <Image
-                  quality={NEXT_IMAGE_DEFAULT_QUALITY}
-                  layout="responsive"
-                  src={image2.src}
-                  alt={image2.alt}
-                  width={image2.width}
-                  height={image2.height}
-                  objectFit="cover"
-                  objectPosition={image2.objectPosition}
-                  priority={true}
-                  placeholder="blur"
-                  blurDataURL={image2.blurDataURL}
-                />
-              </div>
+              <Image
+                wrapperProps={{ className: "w-3/4 md:w-auto" }}
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
+                layout="responsive"
+                src={image2.src}
+                alt={image2.alt}
+                width={image2.width}
+                height={image2.height}
+                objectFit="cover"
+                objectPosition={image2.objectPosition}
+                priority={true}
+                placeholder="blur"
+                blurDataURL={image2.blurDataURL}
+                dominantColor={image2.dominantColor}
+              />
             </div>
 
             <div
               className={classNames(["col-span-2 md:col-start-2 md:col-end-3"])}
             >
-              <div className="w-3/4 ml-auto md:w-auto md:ml-0">
-                <Image
-                  quality={NEXT_IMAGE_DEFAULT_QUALITY}
-                  layout="responsive"
-                  src={image3.src}
-                  alt={image3.alt}
-                  width={image3.width}
-                  height={image3.height}
-                  objectFit="cover"
-                  objectPosition={image3.objectPosition}
-                  priority={true}
-                  placeholder="blur"
-                  blurDataURL={image3.blurDataURL}
-                />
-              </div>
+              <Image
+                wrapperProps={{ className: "w-3/4 ml-auto md:w-auto md:ml-0" }}
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
+                layout="responsive"
+                src={image3.src}
+                alt={image3.alt}
+                width={image3.width}
+                height={image3.height}
+                objectFit="cover"
+                objectPosition={image3.objectPosition}
+                priority={true}
+                placeholder="blur"
+                blurDataURL={image3.blurDataURL}
+                dominantColor={image3.dominantColor}
+              />
             </div>
           </div>
         </Container>
@@ -265,18 +265,18 @@ const RestaurantSection: React.FC<RestaurantSectionProps> = ({
                 "lg:row-start-1",
               ])}
             >
-              <div className="w-3/4 md:w-auto">
-                <Image
-                  quality={NEXT_IMAGE_DEFAULT_QUALITY}
-                  layout="responsive"
-                  src={contentImage.src}
-                  alt={contentImage.alt}
-                  width={contentImage.width}
-                  height={contentImage.height}
-                  placeholder="blur"
-                  blurDataURL={contentImage.blurDataURL}
-                />
-              </div>
+              <Image
+                wrapperProps={{ className: "w-3/4 md:w-auto" }}
+                quality={NEXT_IMAGE_DEFAULT_QUALITY}
+                layout="responsive"
+                src={contentImage.src}
+                alt={contentImage.alt}
+                width={contentImage.width}
+                height={contentImage.height}
+                placeholder="blur"
+                blurDataURL={contentImage.blurDataURL}
+                dominantColor={contentImage.dominantColor}
+              />
             </div>
           </div>
         </Container>
