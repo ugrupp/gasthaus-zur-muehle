@@ -1,0 +1,3 @@
+:global(.headroom--pinned) .inner {
+  padding-right: var(--scroll-lock-width, 0);
+}
