@@ -11,7 +11,6 @@ import styles from "../styles/footer.module.css";
 import richtextStyles from "../styles/richtext.module.css";
 import Container from "./container";
 import Dot from "./dot";
-import Map from "./map";
 
 interface FooterProps {
   data: typeof staticData.footer;
