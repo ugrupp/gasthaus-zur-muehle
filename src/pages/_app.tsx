@@ -17,8 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Gasthaus zur Mühle" />
         <meta property="og:url" content="https://www.mühle-buggingen.de/" />
-        {/* TODO
-        <meta property="og:image" content="/images/share.png" /> */}
+        <meta property="og:image" content="/images/social-share.jpg" />
         <meta
           property="og:description"
           content="Das Gasthaus &raquo;zur Mühle&laquo; bietet frische badische Gerichte mit Weinen aus der Region."
