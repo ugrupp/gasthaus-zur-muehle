@@ -26,6 +26,7 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
     opentimes__html,
     address__html,
     imprint__html,
+    mapImage,
   } = data;
 
   return (
@@ -91,9 +92,30 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
               </div>
 
               {/* Map */}
-              <div className="w-full h-[355px] md:h-[422px] lg:h-[570px] bg-zinc-800 text-white -mt-30 md:-mt-40 mb-30 md:mb-40">
-                <Map />
-              </div>
+              <a
+                href="https://goo.gl/maps/Zvqc7RATUSQM9m7N6"
+                target="_blank"
+                rel="noreferrer"
+                className="block -mt-30 md:-mt-40 mb-30 md:mb-40 w-full h-[355px] md:h-[422px] lg:h-[570px]"
+              >
+                <Image
+                  wrapperProps={{
+                    className: "w-full h-full text-white",
+                  }}
+                  className="transition-opacity duration-1000"
+                  quality={NEXT_IMAGE_DEFAULT_QUALITY}
+                  layout="fill"
+                  src={mapImage.src}
+                  alt={mapImage.alt}
+                  width={mapImage.width}
+                  height={mapImage.height}
+                  objectFit="cover"
+                  objectPosition={mapImage.objectPosition}
+                  placeholder="blur"
+                  blurDataURL={mapImage.blurDataURL}
+                  dominantColor={mapImage.dominantColor}
+                />
+              </a>
 
               {/* Contact */}
               <div className="relative z-10 space-y-12 md:space-y-30">

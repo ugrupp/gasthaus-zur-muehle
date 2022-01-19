@@ -27,6 +27,15 @@
 
   "footer": {
     "id": "anfahrt",
+    "mapImage": {
+      "src": "/images/map.jpg",
+      "width": 680,
+      "height": 570,
+      "alt": "Anfahrt",
+      "objectPosition": "50% 50%",
+      "blurDataURL": "",
+      "dominantColor": ""
+    },
     "bgImage": {
       "src": "/images/textur-wand-1.jpg",
       "width": 4032,
