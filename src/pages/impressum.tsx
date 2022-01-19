@@ -32,7 +32,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
       <h1 className="sr-only">Impressum</h1>
 
-      <div className="pt-60 lg:pt-120 mt-20 lg:mt-120 bg-gray-ci relative">
+      <div className="pt-60 lg:pt-120 mt-20 lg:mt-120 bg-gradient-to-b from-gray-ci relative">
         {/* Bg pattern */}
         <div
           className={classNames(

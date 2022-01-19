@@ -107,8 +107,6 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
                   layout="fill"
                   src={mapImage.src}
                   alt={mapImage.alt}
-                  width={mapImage.width}
-                  height={mapImage.height}
                   objectFit="cover"
                   objectPosition={mapImage.objectPosition}
                   placeholder="blur"
