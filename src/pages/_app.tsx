@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
         <meta
           name="description"
-          content="Das Gasthaus &raquo;zur Mühle&laquo; bietet frische badische Gerichte mit Weinen aus der Region."
+          content="In unserem Gasthaus in Buggingen bewirten wir Sie mit klassischer, badischer Küche – saisonal wechselnde Gerichte mit Spargel, Pfifferlingen, Wild"
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Gasthaus zur Mühle" />
@@ -20,7 +20,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:image" content="/images/social-share.jpg" />
         <meta
           property="og:description"
-          content="Das Gasthaus &raquo;zur Mühle&laquo; bietet frische badische Gerichte mit Weinen aus der Region."
+          content="In unserem Gasthaus in Buggingen bewirten wir Sie mit klassischer, badischer Küche – saisonal wechselnde Gerichte mit Spargel, Pfifferlingen, Wild"
+        />
+        <meta
+          name="keywords"
+          content="Gasthaus, Restaurant, Buggingen, Badische Küche, Spargeln, Pfifferlinge, Wild"
         />
       </Head>
 

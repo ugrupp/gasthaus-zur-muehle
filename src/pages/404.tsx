@@ -23,7 +23,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   return (
     <>
       <Head>
-        <title>Gasthaus »zur Mühle« in Buggingen, Familie Löffler</title>
+        <title>Gasthaus »zur Mühle«</title>
       </Head>
 
       <NotFoundBanner text__html={text__html} bgImage={bgImage} />

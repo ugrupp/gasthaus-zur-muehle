@@ -24,7 +24,10 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   return (
     <>
       <Head>
-        <title>Gasthaus »zur Mühle« in Buggingen, Familie Löffler</title>
+        <title>
+          Gasthaus »zur Mühle« : Das traditionsreiche Gasthaus in Buggingen mit
+          badischer Küche
+        </title>
       </Head>
 
       <h1 className="sr-only">Gasthaus »zur Mühle«</h1>
