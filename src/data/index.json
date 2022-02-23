@@ -46,11 +46,132 @@
     "gallery": [
       {
         "image": {
-          "src": "/images/5.jpg",
-          "width": 2000,
-          "height": 1333,
+          "src": "/images/galerie/galerie-1.jpg",
+          "width": 1360,
+          "height": 907,
           "alt": "",
-          "objectPosition": "10% 60%",
+          "objectPosition": "50% 50%",
+          "blurDataURL": "",
+          "dominantColor": ""
+        }
+      },
+      {
+        "image": {
+          "src": "/images/galerie/galerie-2.jpg",
+          "width": 1360,
+          "height": 907,
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "blurDataURL": "",
+          "dominantColor": ""
+        }
+      },
+      {
+        "image": {
+          "src": "/images/galerie/galerie-3.jpg",
+          "width": 1360,
+          "height": 907,
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "blurDataURL": "",
+          "dominantColor": ""
+        }
+      },
+      {
+        "image": {
+          "src": "/images/galerie/galerie-4.jpg",
+          "width": 1360,
+          "height": 907,
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "blurDataURL": "",
+          "dominantColor": ""
+        }
+      },
+      {
+        "image": {
+          "src": "/images/galerie/galerie-5.jpg",
+          "width": 1360,
+          "height": 907,
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "blurDataURL": "",
+          "dominantColor": ""
+        }
+      },
+      {
+        "image": {
+          "src": "/images/galerie/galerie-6.jpg",
+          "width": 1360,
+          "height": 907,
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "blurDataURL": "",
+          "dominantColor": ""
+        }
+      },
+      {
+        "image": {
+          "src": "/images/galerie/galerie-7.jpg",
+          "width": 1360,
+          "height": 907,
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "blurDataURL": "",
+          "dominantColor": ""
+        }
+      },
+      {
+        "image": {
+          "src": "/images/galerie/galerie-8.jpg",
+          "width": 1360,
+          "height": 907,
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "blurDataURL": "",
+          "dominantColor": ""
+        }
+      },
+      {
+        "image": {
+          "src": "/images/galerie/galerie-9.jpg",
+          "width": 1360,
+          "height": 907,
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "blurDataURL": "",
+          "dominantColor": ""
+        }
+      },
+      {
+        "image": {
+          "src": "/images/galerie/galerie-10.jpg",
+          "width": 1360,
+          "height": 907,
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "blurDataURL": "",
+          "dominantColor": ""
+        }
+      },
+      {
+        "image": {
+          "src": "/images/galerie/galerie-11.jpg",
+          "width": 1360,
+          "height": 907,
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "blurDataURL": "",
+          "dominantColor": ""
+        }
+      },
+      {
+        "image": {
+          "src": "/images/galerie/galerie-12.jpg",
+          "width": 1360,
+          "height": 907,
+          "alt": "",
+          "objectPosition": "50% 50%",
           "blurDataURL": "",
           "dominantColor": ""
         }
