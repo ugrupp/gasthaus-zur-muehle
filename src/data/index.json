@@ -181,7 +181,7 @@
   "hosts": {
     "id": "gastgeber",
     "headline": "Ihre Gastgeber",
-    "intro__html": "<p>Bewirtet werden Sie hier von mir, Peter Löffler und meiner Ehefrau Christine. Ich bin gelernter Winzer und Weinhandelsküfer. Zum Kochen kam ich als Quereinsteiger „aus der Not“, weil gute Köche nicht leicht zu finden sind. Seit ich mich 2001 erstmals in der Küche versucht habe, ging die Entwicklung stets weiter und ich habe schon lange eine neue Leidenschaft im Kochen gefunden. Eine weitere Leidenschaft ist meine Patchwork-Familie mit unseren insgesamt fünf Kindern, von denen die meisten auch ihre Berufung in der Arbeit für den Gast im Gaststätten- und Hotelgewerbe gefunden haben.</p>",
+    "intro__html": "<p>Bewirtet werden Sie hier von mir, Peter Löffler und meiner Ehefrau Christine. Ich bin gelernter Winzer und Weinhandelsküfer. Zum Kochen kam ich als Quereinsteiger „aus der Not“, weil gute Köche nicht leicht zu finden sind. Seit ich mich 2001 erstmals in der Küche versucht habe, ging die Entwicklung stets weiter. Meine Erfahrung als Weinmacher bietet eine wertvolle Grundlage in puncto Geschmack und Genuss.</p>",
     "carousel": [
       {
         "image": {
@@ -245,11 +245,11 @@
     "menu__html": "<p>Lassen Sie sich von unserer Speisekarte schon mal dazu verführen, Lust auf den nächsten Besuch bei uns zu bekommen.</p>",
     "menuFood": {
       "label": "Speisen",
-      "href": "/downloads/Gasthaus-zur-Muehle-Speisen.pdf"
+      "href": "/downloads/Gasthaus-zur-Muehle-Speisekarte.pdf"
     },
     "menuDrinks": {
       "label": "Getränke",
-      "href": "/downloads/Gasthaus-zur-Muehle-Getraenke.pdf"
+      "href": "/downloads/Gasthaus-zur-Muehle-Getraenkekarte.pdf"
     },
     "carousel": [
       {
